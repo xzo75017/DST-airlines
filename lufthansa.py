@@ -131,6 +131,18 @@ def get_aircrafts(Access_Token) :
     return Aircrafts
 
 
+france = airports[airports['CountryCode'] == "FR"].reset_index(drop=True)
+
+european_codes = ["AL", "AD", "AT", "BY", "BE", "BA", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", 
+                  "GR", "HU", "IS", "IE", "IT", "XK", "LV", "LI", "LT", "LU", "MK", "MT", "MD", "MC", "ME", 
+                  "NL", "NO", "PL", "PT", "RO", "RU", "SM", "RS", "SK", "SI", "ES", "SE", "CH", "UA", "GB"]
+europe = airports[airports['CountryCode'].isin(european_codes)].reset_index(drop=True)["AirportCode"]
+
+
+
+
+
+
 def get_flight_schedules(Access_Token, origins, destinations, start_date, num_days):
 
     authentification = {}
@@ -197,3 +209,14 @@ def get_flight_schedules(Access_Token, origins, destinations, start_date, num_da
     FlightSchedules = pd.concat(df_list).drop_duplicates().reset_index(drop=True)
     FlightSchedules.insert(0, "FlightScheduleID" , FlightSchedules.index+1)
     return FlightSchedules
+
+
+
+origins = europ
+destinations = europ
+
+start_date = datetime.date(2023, 4, 21)
+num_days = 1
+
+df = get_flight_schedules(origins, destinations, start_date, num_days)
+df.to_csv("europe.csv")
