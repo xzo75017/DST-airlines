@@ -1,383 +1,379 @@
-,AircraftCode,Names,AirlineEquipCode
-0,100,Fokker 100,F100
-1,141,BAE Systems 146-100 Passenger,B461
-2,142,BAE Systems 146-200 Passenger,B462
-3,143,BAE Systems 146-300 Passenger,B463
-4,14X,BAE Systems 146-100 Freighter,B461
-5,14Y,BAE Systems 146-200 Freighter,B462
-6,14Z,BAE Systems 146-300 Freighter,B463
-7,221,Airbus A220-100,BCS1
-8,223,Airbus A220-300,BCS3
-9,290,E190-E2,E290
-10,295,E195-E2,E295
-11,312,Airbus A310-200 Passenger,A310
-12,313,Airbus A310-300 Passenger,A310
-13,318,Airbus A318,A318
-14,319,Airbus A319,A319
-15,31A,Airbus A318 (sharklets),A318
-16,31B,Airbus A319 (sharklets),A319
-17,31N,Airbus A139neo,A19N
-18,31X,Airbus A310-200 Freighter,A310
-19,31Y,Airbus A310-300 Freighter,A310
-20,320,Airbus A320,A320
-21,321,Airbus A321,A321
-22,32A,Airbus A320 (sharklets),A320
-23,32B,Airbus A321 (sharklets),A321
-24,32F,Airbus A320 Freighter,A320
-25,32N,Airbus A320neo,A20N
-26,32Q,Airbus A321neo,A21N
-27,32X,Airbus A321 Freighter,A321
-28,332,Airbus A330-200,A332
-29,333,Airbus A330-300,A333
-30,33X,Airbus A330-200 Freighter,A332
-31,342,Airbus A340-200,A342
-32,343,Airbus A340-300,A343
-33,345,Airbus A340-500,A345
-34,346,Airbus A340-600,A346
-35,351,Airbus A350-1000,ZZZZ
-36,358,Airbus A350-800,ZZZZ
-37,359,Airbus A350-900,A359
-38,388,Airbus A380-800 Passenger,A388
-39,38F,Airbus A380-800F Freighter,A388
-40,703,Boeing 707-320B / 320C Passenger,B703
-41,70F,Boeing 707-320B / 320C Freighter,B703
-42,70M,Boeing 707-320B / 320C Mixed Configuration,B703
-43,717,Boeing 717-200,B712
-44,721,Boeing 727-100 Passenger,B721
-45,722,Boeing 727-200 Passenger,B722
-46,72B,Boeing 727-100 Mixed Configuration,B721
-47,72C,Boeing 727-200 Mixed Configuration,B722
-48,72W,Boeing 727-200 (winglets) Passenger,B722
-49,72X,Boeing 727-100 Freighter,B721
-50,72Y,Boeing 727-200 Freighter,B722
-51,731,Boeing 737-100 Passenger,B731
-52,732,Boeing 737-200 Passenger,B732
-53,733,Boeing 737-300 Passenger,B733
-54,734,Boeing 737-400 Passenger,B734
-55,735,Boeing 737-500 Passenger,B735
-56,736,Boeing 737-600 Passenger,B736
-57,738,Boeing 737-800 Passenger,B738
-58,739,Boeing 737-900 Passenger,B739
-59,73C,Boeing 737-300 (winglets) Passenger,B733
-60,73E,Boeing 737-500 (winglets) Passenger,B735
-61,73G,Boeing 737-700 Passenger,B737
-62,73H,Boeing 737-800 (winglets) Passenger/BBJ2,B738
-63,73J,Boeing 737-900 (winglets) Passenger/BBJ3,B739
-64,73L,Boeing 737-200 Mixed Configuration,B732
-65,73N,Boeing 737-300 Mixed Configuration,B733
-66,73P,Boeing 737-400 Freighter,B734
-67,73Q,Boeing 737-400 Mixed Configuration,B734
-68,73R,Boeing 737-700 Mixed Configuration/BBJC,B737
-69,73S,Boeing 737-700 Freighter,B737
-70,73W,Boeing 737-700 (winglets) Passenger/BBJ1,B737
-71,73X,Boeing 737-200 Freighter,B732
-72,73Y,Boeing 737-300 Freighter,B733
-73,741,Boeing 747-100 Passenger,B741
-74,742,Boeing 747-200 Passenger,B742
-75,743,Boeing 747-300 / 747-100/200 SUD Passenger,B743
-76,744,Boeing 747-400 Passenger,B744
-77,748,,
-78,748,,
-79,74B,Boeing 747-400 Swingtail Freighter,B744
-80,74C,Boeing 747-200 Mixed Configuration,B742
-81,74D,Boeing 747-300 / 747-200 SUD Mixed Configuration,B743
-82,74E,Boeing 747-400 Mixed Configuration,B744
-83,74H,Boeing 747-8 Passenger,B748
-84,74J,Boeing 747-400 (Domestic) Passenger,B74D
-85,74L,Boeing 747SP Passenger,B74S
-86,74N,Boeing 747-8F Freighter,B748
-87,74R,Boeing 747SR Passenger,B74R
-88,74T,Boeing 747-100 Freighter,B741
-89,74U,Boeing 747-300 / 747-200 SUD Freighter,B743
-90,74V,Boeing 747SR Freighter,B74R
-91,74X,Boeing 747-200 Freighter,B742
-92,74Y,Boeing 747-400 Freighter,B744
-93,752,Boeing 757-200 Passenger,B752
-94,753,Boeing 757-300 Passenger,B753
-95,75F,Boeing 757-200 Freighter,B752
-96,75M,Boeing 757-200 Mixed Configuration,B752
-97,75T,Boeing 757-300 (winglets) Passenger,B753
-98,75W,Boeing 757-200 (winglets) Passenger,B752
-99,762,Boeing 767-200 Passenger,B762
-100,762,Boeing 767-200 Passenger,B762
-101,763,Boeing 767-300 Passenger,B763
-102,764,Boeing 767-400 Passenger,B764
-103,76V,Boeing 767-300 (winglets) Freighter,B763
-104,76W,Boeing 767-300 (winglets) Passenger,B763
-105,76X,Boeing 767-200 Freighter,B762
-106,76Y,Boeing 767-300 Freighter,B763
-107,772,Boeing 777-200/ 200ER,B77L
-108,773,Boeing 777-300,B773
-109,779,Boeing 777-900,B779
-110,77F,Boeing 777 Freighter,B77F
-111,77L,Boeing 777-200LR,B772
-112,77W,Boeing 777-300ER,B77W
-113,77X,Boeing 777-200F Freighter,B772
-114,783,Boeing 787-3,B783
-115,788,Boeing 787-8,B788
-116,789,Boeing 787-9,B789
-117,A22,Antonov An-22,AN22
-118,A26,Antonov An-26,AN26
-119,A28,Antonov An-28 / PZL Mielec M-28 Skytruck,AN28
-120,A30,Antonov An-30,AN30
-121,A32,Antonov An-32,AN32
-122,A38,Antonov An-38,AN38
-123,A40,Antonov An-140,A140
-124,A4F,Antonov An-124 Ruslan,A124
-125,A58,Antonov An-158,ZZZZ
-126,A5F,Antonov An-225,A225
-127,A81,Antonov AN148-100,A148
-128,AB4,Airbus A300B2 / A300B4 Passenger,A30B
-129,AB6,Airbus A300-600 Passenger,A306
-130,ABB,Airbus A300-600ST Beluga Freighter,A3ST
-131,ABX,Airbus A300B4 / A300C4 / A300F4 Freighter,A30B
-132,ABY,Airbus A300-600 Freighter,A306
-133,ACP,Twin Commander Aircraft,*
-134,ACT,Twin (Aero) Turbo Commander / Jetprop Commander,*
-135,AGH,AgustaWestland A109,A109
-136,AN4,Antonov An-24,AN24
-137,AN7,Antonov An-72 / An-74,AN72
-138,ANF,Antonov An-12,AN12
-139,APF,BAE Systems  ATP Freighter,ZZZZ
-140,APH,Eurocopter (Aerospatiale) SA330 Puma / AS332 Super Puma,*
-141,AR1,Avro RJ100,RJ1H
-142,AR7,Avro RJ70,RJ70
-143,AR8,Avro RJ85,RJ85
-144,AT4,ATR 42-300 / 320,AT43
-145,AT7,ATR 72,AT72
-146,ATF,ATR 72 Freighter,AT72
-147,ATP,BAE Systems  ATP,ATP
-148,ATZ,ATR 42 Freighter,*
-149,AWH,AgustaWestland AW139,A139
-150,AWZ,Augusta Westland 200,*
-151,B12,BAE Systems (BAC) One-Eleven 200,BA11
-152,B13,BAE Systems (BAC) One-Eleven 300,BA11
-153,B14,BAE Systems (BAC) One-Eleven 400 / 475,BA11
-154,B15,BAE Systems (BAC) One-Eleven 500 / RomBac One-Eleven 560,BA11
-155,B72,Boeing 720-020B,B720
-156,BE2,Hawker Beechcraft (Light aircraft-twin piston engines),*
-157,BE4,Hawker 400 Beechjet/400A/400XP/400T,BE40
-158,BE9,Hawker Beechcraft C99 Airliner,BE99
-159,BEF,Hawker Beechcraft 1900 Freighter,B190
-160,BEH,Hawker Beechcraft 1900D Airliner,B190
-161,BEP,Hawker Beechcraft (Light aircraft-single piston engine),*
-162,BES,Hawker Beechcraft 1900C Airliner,B190
-163,BET,Hawker Beechcraft (Light aircraft-twin turboprop engines),*
-164,BH2,Bell (Helicopters),*
-165,BNI,Britten-Norman BN-2A / BN-2B Islander,BN2P
-166,BNT,Britten-Norman BN-2A Mk.III Trislander,TRIS
-167,BTA,Business Turbo-Prop Aircraft,ZZZZ
-168,BUS,Bus,0000
-169,C27,Comac ARJ21-700,AJ27
-170,CCJ,Canadair (Bombardier) CL-600 / 601 / 604 / 605 Challenger,CL60
-171,CCX,Bombardier BD-700 Global Express/Global 500,GLEX
-172,CD2,Gippsland Aeronautics N22B / N24A Nomad,NOMA
-173,CJ1,Cessna 500/ 501/ 525 Citation,*
-174,CJ2,Cessna 550/ 551/ 552 Citation,*
-175,CJ5,Cessna 560 Citation,*
-176,CJ6,Cessna 650 Citation,*
-177,CJ8,Cessna 680 Citation,*
-178,CJL,Cessna 560 XL/XLS Citation,*
-179,CJM,Cessna 510 Mustang Citation,C510
-180,CJX,Cessna 750 Citation X,C750
-181,CL3,Bombardier Challenger 300,CL30
-182,CN1,Cessna (Light aircraft-single piston engine),*
-183,CN2,Cessna (Light aircraft-twin piston engines),*
-184,CNC,Cessna (Light aircraft-single turboprop engine),*
-185,CNF,Cessna 208B Freighter,*
-186,CNJ,Cessna Citation,*
-187,CNT,Cessna (Light aircraft-twin turboprop engines),*
-188,CR1,Canadair (Bombardier) Regional Jet 100,CRJ1
-189,CR2,Canadair (Bombardier) Regional Jet 200,CRJ2
-190,CR7,Canadair (Bombardier) Regional Jet 700 and Challenger 870,CRJ7
-191,CR9,Canadair (Bombardier) Regional Jet 900 and Challenger 890,CRJ9
-192,CRA,Canadair (Bombardier) Regional Jet 705,CRJ9
-193,CRF,Canadair (Bombardier) Regional Jet Freighter,ZZZZ
-194,CRK,Canadair (Bombardier) Regional Jet 1000,CRJX
-195,CS2,CASA / lAe 212 Aviocar,C212
-196,CS5,CASA / lAe CN-235,CN35
-197,CS9,CASA / lAe C-295,C295
-198,CV2,Convair 240 Passenger,CVLP
-199,CV4,Convair 440 Metropolitan Passenger,CVLP
-200,CV5,Convair 580 Passenger,CVLT
-201,CVV,Convair 240 Freighter,CVLP
-202,CVX,Convair 340 / 440 Freighter,CVLP
-203,CVY,Convair 580 / 5800 / 600 / 640 Freighter,CVLT
-204,CWC,Curtiss C-46 Commando,C46
-205,D11,Boeing (Douglas) DC-10-10 / 15 Passenger,DC10
-206,D1C,Boeing (Douglas) DC-10-30 / 40 Passenger,DC10
-207,D1M,Boeing (Douglas) DC-10-30 Mixed Configuration,DC10
-208,D1X,Boeing (Douglas) DC-10-10 Freighter,DC10
-209,D1Y,Boeing (Douglas) DC-10-30 / 40 Freighter,DC10
-210,D20,Dassault Falcon 2000/2000DX,F2TH
-211,D28,Fairchild Dornier 228,D228
-212,D2L,Dassault Falcon 2000EX/EASY/LX,F2TH
-213,D38,Fairchild Dornier 328-100,D328
-214,D3F,Boeing (Douglas) DC-3 Freighter,DC3
-215,D42,Diamond Aircraft DA42 Twin Star,DA42
-216,D4X,De Havilland (Bombardier) DHC-8-400 Dash 8Q Freighter,DH8D
-217,D6F,Boeing (Douglas) DC-6A / DC-6B / DC-6C Freighter,DC6
-218,D8L,Boeing (Douglas) DC-8-62 Passenger,DC86
-219,D8M,Boeing (Douglas) DC-8-62 Mixed Configuration,DC86
-220,D8Q,Boeing (Douglas) DC-8-72 Passenger,DC87
-221,D8T,Boeing (Douglas) DC-8-50 Freighter,DC85
-222,D8X,Boeing (Douglas) DC-8-61 / 62 / 63 Freighter,DC86
-223,D8Y,Boeing (Douglas) DC-8-71 / 72 / 73 Freighter,DC87
-224,D91,Boeing (Douglas) DC-9-10 Passenger,DC91
-225,D92,Boeing (Douglas) DC-9-20 Passenger,DC92
-226,D93,Boeing (Douglas) DC-9-30 Passenger,DC93
-227,D94,Boeing (Douglas) DC-9-40 Passenger,DC94
-228,D95,Boeing (Douglas) DC-9-50 Passenger,DC95
-229,D9C,Boeing (Douglas) DC-9-30 Freighter,DC93
-230,D9D,Boeing (Douglas) DC-9-40 Freighter,DC94
-231,D9L,Dassault Falcon 900LX,F900
-232,D9X,Boeing (Douglas) DC-9-10 Freighter,DC91
-233,DC3,Boeing (Douglas) DC-3 Passenger,DC3
-234,DC4,Boeing (Douglas) DC-4,DC4
-235,DC6,Boeing (Douglas) DC-6B Passenger,DC6
-236,DF1,Dassault Falcon 10 / 100,FA10
-237,DF2,Dassault Falcon 20 / 200,FA20
-238,DF5,Dassault Falcon 50 / 50EX,FA50
-239,DF7,Dassault Falcon 7X,FA7X
-240,DF9,Dassault Falcon 900/900B/900C/900DX/900EX/EASY,F900
-241,DH1,De Havilland (Bombardier) DHC-8-100 Dash 8 / 8Q,DH8A
-242,DH2,De Havilland (Bombardier) DHC-8-200 Dash 8 / 8Q,DH8B
-243,DH3,De Havilland (Bombardier) DHC-8-300 Dash 8 / 8Q,DH8C
-244,DH4,De Havilland (Bombardier) DHC-8-400 Dash 8Q,DH8D
-245,DH7,De Havilland (Bombardier) DHC-7 Dash 7,DHC7
-246,DHC,De Havilland (Bombardier) DHC-4 Caribou,DHC4
-247,DHD,BAE Systems (De Havilland) 104 Dove,DOVE
-248,DHF,De Havilland (Bombardier) DHC-8 Freighter,0000
-249,DHH,BAE Systems (De Havilland) 114 Heron,HERN
-250,DHL,De Havilland (Bombardier) DHC-3 Turbo Otter,DH3T
-251,DHP,De Havilland (Bombardier) DHC-2 Beaver,DHC2
-252,DHR,De Havilland (Bombardier) DHC-2 Turbo Beaver,DH2T
-253,DHS,De Havilland (Bombardier) DHC-3 Otter,DHC3
-254,DHT,De Havilland (Bombardier) DHC-6 Twin Otter,DHC6
-255,E70,Embraer 170,E170
-256,E75,Embraer 175,E170
-257,E90,Embraer 190,E190
-258,E95,Embraer 195 and Legacy 1000,E190
-259,EA5,Eclipse 500,EA50
-260,EC3,Eurocopter EC130,EC30
-261,EC5,Eurocopter EC155,EC55
-262,EM2,Embraer 120 Brasilia,E120
-263,EMB,Embraer 110 Bandeirante,E110
-264,EP1,Embraer EMB-500 Phenom 100,E50P
-265,EP3,Embraer EMB-505 Phenom 300,E55P
-266,ER3,Embraer RJ135 and Legacy 600/650,E135
-267,ER4,Embraer RJ145,E145
-268,ERD,Embraer RJ140,E135
-269,F21,Fokker F28 Fellowship 1000,F28
-270,F22,Fokker F28 Fellowship 2000,F28
-271,F23,Fokker F28 Fellowship 3000,F28
-272,F24,Fokker F28 Fellowship 4000,F28
-273,F27,Fokker F27 Friendship / Fairchild Industries F-27,F27
-274,F50,Fokker 50,F50
-275,F5F,Fokker 50 Freighter,F50
-276,F70,Fokker 70,F70
-277,FK7,Fairchild Industries FH-227,F27
-278,FRJ,Fairchild Dornier 328JET,J328
-279,G2B,Gulfstream Aerospace G-1159 Gulfstream IIB,GLF2
-280,G2S,Gulfstream Aerospace G-1159 Gulfstream IISP,GLF2
-281,GA8,Gippsland Aeronautics GA8 Airvan,GA8
-282,GJ2,Gulfstream Aerospace G-1159 Gulfstream II,GLF2
-283,GJ3,Gulfstream Aerospace G-1159A Gulfstream III,GLF3
-284,GJ4,Gulfstream Aerospace IV (G300/G350/G400/G450/IVSP),GLF4
-285,GJ5,Gulfstream Aerospace V (G500/G550),GLF5
-286,GJ6,Gulfstream Aerospace G650,GLF6
-287,GR1,Gulfstream Aerospace G-100/G-150 (Astra SPX),G150
-288,GR2,Gulfstream Aerospace G-200 (Galaxy),GALX
-289,GR3,Gulfstream Aerospace G-280,G280
-290,GRG,Grumman G-21 Goose (Amphibian),G21
-291,GRM,Grumman G-73 Turbo Mallard (Amphibian),G73T
-292,H20,Hawker 200,PRM1
-293,H21,Hawker 1000,H25C
-294,H24,Hawker 4000,HA4T
-295,H25,Hawker 750/800/800XP/800SP,H25B
-296,H28,Hawker 850XP/900,H25B
-297,H29,Hawker 900XP,H25B
-298,HEC,Helio H-250 Courier / H-295 / 395 Super Courier,COUR
-299,HOV,Surface Equipment-Hovercraft,0000
-300,HS7,BAE Systems (Hawker Siddeley) 748 / Andover,A748
-301,I14,Ilyushin Il-114,I114
-302,I9F,Ilyushin Il-96 Freighter,IL96
-303,IL6,Ilyushin Il-62,IL62
-304,IL7,Ilyushin Il-76,IL76
-305,IL8,Ilyushin Il-18,IL18
-306,IL9,Ilyushin Il-96 Passenger,IL96
-307,ILW,Ilyushin Il-86,IL86
-308,J31,BAE Systems Jetstream 31,JS31
-309,J32,BAE Systems Jetstream 32,JS32
-310,J41,BAE Systems Jetstream 41,JS41
-311,JU5,Junkers Ju 52/3m,JU52
-312,L11,Lockheed Martin L-1011 TriStar 1 / 50 / 100 / 150 / 200 / 250 Passenger,L101
-313,L15,Lockheed Martin L-1011 TriStar 500 Passenger,L101
-314,L1F,Lockheed Martin L-1011 TriStar Freighter,L101
-315,L4F,Aircraft Industries (LET) 410 Freighter,L410
-316,L4T,Aircraft Industries (LET) 410,L410
-317,LCH,Surface Equipment-Launch / Boat,0000
-318,LJA,Light Jet Aircraft,ZZZZ
-319,LMO,Surface Equipment-Limousine,0000
-320,LOE,Lockheed Martin L-188 Electra,L188
-321,LOF,Lockheed Martin L-188 Electra Freighter,L188
-322,LOH,Lockheed Martin L-182 / L-282 / L-382 (L-100) Hercules,C130
-323,LRJ,Learjet,*
-324,M11,Boeing (Douglas) MD-11 Passenger,MD11
-325,M1F,Boeing (Douglas) MD-11 Freighter,MD11
-326,M1M,Boeing (Douglas) MD-11 Mixed Configuration,MD11
-327,M2F,Boeing (Douglas) MD82 Freighter,MD82
-328,M3F,Boeing (Douglas) MD83 Freighter,MD83
-329,M81,Boeing (Douglas) MD-81,MD81
-330,M82,Boeing (Douglas) MD-82,MD82
-331,M83,Boeing (Douglas) MD-83,MD83
-332,M87,Boeing (Douglas) MD-87,MD87
-333,M88,Boeing (Douglas) MD-88,MD88
-334,M8F,Boeing (Douglas) MD88 Freighter,MD88
-335,M90,Boeing (Douglas) MD-90,MD90
-336,MA6,Xian Yunshuji MA-60/MA600,AN24
-337,MBH,Eurocopter (MBB) BO105,B105
-338,MD9,MD Helicopters Inc MD 900 Explorer,EXPL
-339,MIH,Mil Mi-8 / Mi-17 / Mi-171 / Mi-172,MI8
-340,MU2,Mitsubishi Aircraft Corporation MU-2,MU2
-341,NDC,Aerospatiale SN601 Corvette,S601
-342,NDE,Eurocopter (Aerospatiale) AS350 Ecureuil / AS355 Ecureuil 2,*
-343,NDH,Eurocopter (Aerospatiale) SA365C / SA365N  Dauphin 2,*
-344,P18,Piaggio Aero P180 Avanti II,P180
-345,PA1,Piper (Light aircraft-single piston engine),*
-346,PA2,Piper (Light aircraft-twin piston engines),*
-347,PAT,Piper (Light aircraft-twin turboprop engines),*
-348,PL2,Pilatus PC-12,PC12
-349,PL6,Pilatus PC-6 Turbo Porter,PC6T
-350,PN6,Vulcanair (Partenavia) P.68,P68
-351,PR1,Hawker 390 Premier 1/1A,PRM1
-352,RFS,Surface Equipment-Road Feeder Service (Truck),0000
-353,S20,Saab 2000,SB20
-354,S58,Sikorsky S-58T,S58T
-355,S61,Sikorsky S-61,S61
-356,S76,Sikorsky S-76,S76
-357,SF3,Saab 340,SF34
-358,SFB,Saab 340B,SF34
-359,SFF,Saab 340 Freighter,SF34
-360,SH3,Shorts 330 (SD3-30),SH33
-361,SH6,Shorts 360 (SD3-60),SH36
-362,SHS,Shorts Skyvan (SC-7),SC7
-363,SU7,Sukhoi Superjet 100-75,ZZZZ
-364,SU9,Sukhoi Superjet 100-95,SU95
-365,SWF,Fairchild (Swearingen) SA226 Freighter,*
-366,SWM,Fairchild (Swearingen) SA26 / SA226 / SA227 Merlin / Metro / Expediter,*
-367,SY8,Shaanxi Y-8,AN12
-368,T20,Tupolev Tu-204 / Tu-214,T204
-369,T2F,Tupolev Tu-204 Freighter,T204
-370,T34,Tupolev Tu-334,T334
-371,TBM,SOCATA TBM-700,TBM7
-372,TRN,Train,0000
-373,TRS,Train,0000
-374,TU3,Tupolev Tu-134,T134
-375,TU5,Tupolev Tu-154,T154
-376,WWP,Israel Aerospace Industries 1124 Westwind,WW24
-377,YK2,Yakovlev Yak-42 / Yak-142,YK42
-378,YK4,Yakovlev Yak-40,YK40
-379,YN2,Harbin Yunshuji Y12,Y12
-380,YN7,Xian Yunshuji Y7,AN24
-381,YS1,NAMC YS-11,YS11
+Unnamed: 0.1,Unnamed: 0,AircraftCode,Names,AirlineEquipCode
+0,0,100,Fokker 100,F100
+1,1,141,BAE Systems 146-100 Passenger,B461
+2,2,142,BAE Systems 146-200 Passenger,B462
+3,3,143,BAE Systems 146-300 Passenger,B463
+4,4,14X,BAE Systems 146-100 Freighter,B461
+5,5,14Y,BAE Systems 146-200 Freighter,B462
+6,6,14Z,BAE Systems 146-300 Freighter,B463
+7,7,221,Airbus A220-100,BCS1
+8,8,223,Airbus A220-300,BCS3
+9,9,290,E190-E2,E290
+10,10,295,E195-E2,E295
+11,11,312,Airbus A310-200 Passenger,A310
+12,12,313,Airbus A310-300 Passenger,A310
+13,13,318,Airbus A318,A318
+14,14,319,Airbus A319,A319
+15,15,31A,Airbus A318 (sharklets),A318
+16,16,31B,Airbus A319 (sharklets),A319
+17,17,31N,Airbus A139neo,A19N
+18,18,31X,Airbus A310-200 Freighter,A310
+19,19,31Y,Airbus A310-300 Freighter,A310
+20,20,320,Airbus A320,A320
+21,21,321,Airbus A321,A321
+22,22,32A,Airbus A320 (sharklets),A320
+23,23,32B,Airbus A321 (sharklets),A321
+24,24,32F,Airbus A320 Freighter,A320
+25,25,32N,Airbus A320neo,A20N
+26,26,32Q,Airbus A321neo,A21N
+27,27,32X,Airbus A321 Freighter,A321
+28,28,332,Airbus A330-200,A332
+29,29,333,Airbus A330-300,A333
+30,30,33X,Airbus A330-200 Freighter,A332
+31,31,342,Airbus A340-200,A342
+32,32,343,Airbus A340-300,A343
+33,33,345,Airbus A340-500,A345
+34,34,346,Airbus A340-600,A346
+35,35,351,Airbus A350-1000,ZZZZ
+36,36,358,Airbus A350-800,ZZZZ
+37,37,359,Airbus A350-900,A359
+38,38,388,Airbus A380-800 Passenger,A388
+39,39,38F,Airbus A380-800F Freighter,A388
+40,40,703,Boeing 707-320B / 320C Passenger,B703
+41,41,70F,Boeing 707-320B / 320C Freighter,B703
+42,42,70M,Boeing 707-320B / 320C Mixed Configuration,B703
+43,43,717,Boeing 717-200,B712
+44,44,721,Boeing 727-100 Passenger,B721
+45,45,722,Boeing 727-200 Passenger,B722
+46,46,72B,Boeing 727-100 Mixed Configuration,B721
+47,47,72C,Boeing 727-200 Mixed Configuration,B722
+48,48,72W,Boeing 727-200 (winglets) Passenger,B722
+49,49,72X,Boeing 727-100 Freighter,B721
+50,50,72Y,Boeing 727-200 Freighter,B722
+51,51,731,Boeing 737-100 Passenger,B731
+52,52,732,Boeing 737-200 Passenger,B732
+53,53,733,Boeing 737-300 Passenger,B733
+54,54,734,Boeing 737-400 Passenger,B734
+55,55,735,Boeing 737-500 Passenger,B735
+56,56,736,Boeing 737-600 Passenger,B736
+57,57,738,Boeing 737-800 Passenger,B738
+58,58,739,Boeing 737-900 Passenger,B739
+59,59,73C,Boeing 737-300 (winglets) Passenger,B733
+60,60,73E,Boeing 737-500 (winglets) Passenger,B735
+61,61,73G,Boeing 737-700 Passenger,B737
+62,62,73H,Boeing 737-800 (winglets) Passenger/BBJ2,B738
+63,63,73J,Boeing 737-900 (winglets) Passenger/BBJ3,B739
+64,64,73L,Boeing 737-200 Mixed Configuration,B732
+65,65,73N,Boeing 737-300 Mixed Configuration,B733
+66,66,73P,Boeing 737-400 Freighter,B734
+67,67,73Q,Boeing 737-400 Mixed Configuration,B734
+68,68,73R,Boeing 737-700 Mixed Configuration/BBJC,B737
+69,69,73S,Boeing 737-700 Freighter,B737
+70,70,73W,Boeing 737-700 (winglets) Passenger/BBJ1,B737
+71,71,73X,Boeing 737-200 Freighter,B732
+72,72,73Y,Boeing 737-300 Freighter,B733
+73,73,741,Boeing 747-100 Passenger,B741
+74,74,742,Boeing 747-200 Passenger,B742
+75,75,743,Boeing 747-300 / 747-100/200 SUD Passenger,B743
+76,76,744,Boeing 747-400 Passenger,B744
+77,77,748,,
+80,80,74C,Boeing 747-200 Mixed Configuration,B742
+81,81,74D,Boeing 747-300 / 747-200 SUD Mixed Configuration,B743
+82,82,74E,Boeing 747-400 Mixed Configuration,B744
+83,83,74H,Boeing 747-8 Passenger,B748
+84,84,74J,Boeing 747-400 (Domestic) Passenger,B74D
+85,85,74L,Boeing 747SP Passenger,B74S
+86,86,74N,Boeing 747-8F Freighter,B748
+87,87,74R,Boeing 747SR Passenger,B74R
+88,88,74T,Boeing 747-100 Freighter,B741
+89,89,74U,Boeing 747-300 / 747-200 SUD Freighter,B743
+90,90,74V,Boeing 747SR Freighter,B74R
+91,91,74X,Boeing 747-200 Freighter,B742
+92,92,74Y,Boeing 747-400 Freighter,B744
+93,93,752,Boeing 757-200 Passenger,B752
+94,94,753,Boeing 757-300 Passenger,B753
+95,95,75F,Boeing 757-200 Freighter,B752
+96,96,75M,Boeing 757-200 Mixed Configuration,B752
+97,97,75T,Boeing 757-300 (winglets) Passenger,B753
+98,98,75W,Boeing 757-200 (winglets) Passenger,B752
+99,99,762,Boeing 767-200 Passenger,B762
+101,101,763,Boeing 767-300 Passenger,B763
+103,103,76V,Boeing 767-300 (winglets) Freighter,B763
+104,104,76W,Boeing 767-300 (winglets) Passenger,B763
+105,105,76X,Boeing 767-200 Freighter,B762
+106,106,76Y,Boeing 767-300 Freighter,B763
+107,107,772,Boeing 777-200/ 200ER,B77L
+108,108,773,Boeing 777-300,B773
+109,109,779,Boeing 777-900,B779
+110,110,77F,Boeing 777 Freighter,B77F
+111,111,77L,Boeing 777-200LR,B772
+112,112,77W,Boeing 777-300ER,B77W
+113,113,77X,Boeing 777-200F Freighter,B772
+114,114,783,Boeing 787-3,B783
+115,115,788,Boeing 787-8,B788
+116,116,789,Boeing 787-9,B789
+117,117,A22,Antonov An-22,AN22
+118,118,A26,Antonov An-26,AN26
+119,119,A28,Antonov An-28 / PZL Mielec M-28 Skytruck,AN28
+120,120,A30,Antonov An-30,AN30
+121,121,A32,Antonov An-32,AN32
+122,122,A38,Antonov An-38,AN38
+123,123,A40,Antonov An-140,A140
+124,124,A4F,Antonov An-124 Ruslan,A124
+125,125,A58,Antonov An-158,ZZZZ
+126,126,A5F,Antonov An-225,A225
+127,127,A81,Antonov AN148-100,A148
+128,128,AB4,Airbus A300B2 / A300B4 Passenger,A30B
+129,129,AB6,Airbus A300-600 Passenger,A306
+130,130,ABB,Airbus A300-600ST Beluga Freighter,A3ST
+131,131,ABX,Airbus A300B4 / A300C4 / A300F4 Freighter,A30B
+132,132,ABY,Airbus A300-600 Freighter,A306
+133,133,ACP,Twin Commander Aircraft,*
+134,134,ACT,Twin (Aero) Turbo Commander / Jetprop Commander,*
+135,135,AGH,AgustaWestland A109,A109
+136,136,AN4,Antonov An-24,AN24
+137,137,AN7,Antonov An-72 / An-74,AN72
+138,138,ANF,Antonov An-12,AN12
+139,139,APF,BAE Systems  ATP Freighter,ZZZZ
+140,140,APH,Eurocopter (Aerospatiale) SA330 Puma / AS332 Super Puma,*
+141,141,AR1,Avro RJ100,RJ1H
+142,142,AR7,Avro RJ70,RJ70
+143,143,AR8,Avro RJ85,RJ85
+144,144,AT4,ATR 42-300 / 320,AT43
+145,145,AT7,ATR 72,AT72
+146,146,ATF,ATR 72 Freighter,AT72
+147,147,ATP,BAE Systems  ATP,ATP
+148,148,ATZ,ATR 42 Freighter,*
+149,149,AWH,AgustaWestland AW139,A139
+150,150,AWZ,Augusta Westland 200,*
+151,151,B12,BAE Systems (BAC) One-Eleven 200,BA11
+152,152,B13,BAE Systems (BAC) One-Eleven 300,BA11
+153,153,B14,BAE Systems (BAC) One-Eleven 400 / 475,BA11
+154,154,B15,BAE Systems (BAC) One-Eleven 500 / RomBac One-Eleven 560,BA11
+155,155,B72,Boeing 720-020B,B720
+156,156,BE2,Hawker Beechcraft (Light aircraft-twin piston engines),*
+157,157,BE4,Hawker 400 Beechjet/400A/400XP/400T,BE40
+158,158,BE9,Hawker Beechcraft C99 Airliner,BE99
+159,159,BEF,Hawker Beechcraft 1900 Freighter,B190
+160,160,BEH,Hawker Beechcraft 1900D Airliner,B190
+161,161,BEP,Hawker Beechcraft (Light aircraft-single piston engine),*
+162,162,BES,Hawker Beechcraft 1900C Airliner,B190
+163,163,BET,Hawker Beechcraft (Light aircraft-twin turboprop engines),*
+164,164,BH2,Bell (Helicopters),*
+165,165,BNI,Britten-Norman BN-2A / BN-2B Islander,BN2P
+166,166,BNT,Britten-Norman BN-2A Mk.III Trislander,TRIS
+167,167,BTA,Business Turbo-Prop Aircraft,ZZZZ
+168,168,BUS,Bus,0000
+169,169,C27,Comac ARJ21-700,AJ27
+170,170,CCJ,Canadair (Bombardier) CL-600 / 601 / 604 / 605 Challenger,CL60
+171,171,CCX,Bombardier BD-700 Global Express/Global 500,GLEX
+172,172,CD2,Gippsland Aeronautics N22B / N24A Nomad,NOMA
+173,173,CJ1,Cessna 500/ 501/ 525 Citation,*
+174,174,CJ2,Cessna 550/ 551/ 552 Citation,*
+175,175,CJ5,Cessna 560 Citation,*
+176,176,CJ6,Cessna 650 Citation,*
+177,177,CJ8,Cessna 680 Citation,*
+178,178,CJL,Cessna 560 XL/XLS Citation,*
+179,179,CJM,Cessna 510 Mustang Citation,C510
+180,180,CJX,Cessna 750 Citation X,C750
+181,181,CL3,Bombardier Challenger 300,CL30
+182,182,CN1,Cessna (Light aircraft-single piston engine),*
+183,183,CN2,Cessna (Light aircraft-twin piston engines),*
+184,184,CNC,Cessna (Light aircraft-single turboprop engine),*
+185,185,CNF,Cessna 208B Freighter,*
+186,186,CNJ,Cessna Citation,*
+187,187,CNT,Cessna (Light aircraft-twin turboprop engines),*
+188,188,CR1,Canadair (Bombardier) Regional Jet 100,CRJ1
+189,189,CR2,Canadair (Bombardier) Regional Jet 200,CRJ2
+190,190,CR7,Canadair (Bombardier) Regional Jet 700 and Challenger 870,CRJ7
+191,191,CR9,Canadair (Bombardier) Regional Jet 900 and Challenger 890,CRJ9
+192,192,CRA,Canadair (Bombardier) Regional Jet 705,CRJ9
+193,193,CRF,Canadair (Bombardier) Regional Jet Freighter,ZZZZ
+194,194,CRK,Canadair (Bombardier) Regional Jet 1000,CRJX
+195,195,CS2,CASA / lAe 212 Aviocar,C212
+196,196,CS5,CASA / lAe CN-235,CN35
+197,197,CS9,CASA / lAe C-295,C295
+198,198,CV2,Convair 240 Passenger,CVLP
+199,199,CV4,Convair 440 Metropolitan Passenger,CVLP
+200,200,CV5,Convair 580 Passenger,CVLT
+201,201,CVV,Convair 240 Freighter,CVLP
+202,202,CVX,Convair 340 / 440 Freighter,CVLP
+203,203,CVY,Convair 580 / 5800 / 600 / 640 Freighter,CVLT
+204,204,CWC,Curtiss C-46 Commando,C46
+205,205,D11,Boeing (Douglas) DC-10-10 / 15 Passenger,DC10
+206,206,D1C,Boeing (Douglas) DC-10-30 / 40 Passenger,DC10
+207,207,D1M,Boeing (Douglas) DC-10-30 Mixed Configuration,DC10
+208,208,D1X,Boeing (Douglas) DC-10-10 Freighter,DC10
+209,209,D1Y,Boeing (Douglas) DC-10-30 / 40 Freighter,DC10
+210,210,D20,Dassault Falcon 2000/2000DX,F2TH
+211,211,D28,Fairchild Dornier 228,D228
+212,212,D2L,Dassault Falcon 2000EX/EASY/LX,F2TH
+213,213,D38,Fairchild Dornier 328-100,D328
+214,214,D3F,Boeing (Douglas) DC-3 Freighter,DC3
+215,215,D42,Diamond Aircraft DA42 Twin Star,DA42
+216,216,D4X,De Havilland (Bombardier) DHC-8-400 Dash 8Q Freighter,DH8D
+217,217,D6F,Boeing (Douglas) DC-6A / DC-6B / DC-6C Freighter,DC6
+218,218,D8L,Boeing (Douglas) DC-8-62 Passenger,DC86
+219,219,D8M,Boeing (Douglas) DC-8-62 Mixed Configuration,DC86
+220,220,D8Q,Boeing (Douglas) DC-8-72 Passenger,DC87
+221,221,D8T,Boeing (Douglas) DC-8-50 Freighter,DC85
+222,222,D8X,Boeing (Douglas) DC-8-61 / 62 / 63 Freighter,DC86
+223,223,D8Y,Boeing (Douglas) DC-8-71 / 72 / 73 Freighter,DC87
+224,224,D91,Boeing (Douglas) DC-9-10 Passenger,DC91
+225,225,D92,Boeing (Douglas) DC-9-20 Passenger,DC92
+226,226,D93,Boeing (Douglas) DC-9-30 Passenger,DC93
+227,227,D94,Boeing (Douglas) DC-9-40 Passenger,DC94
+228,228,D95,Boeing (Douglas) DC-9-50 Passenger,DC95
+229,229,D9C,Boeing (Douglas) DC-9-30 Freighter,DC93
+230,230,D9D,Boeing (Douglas) DC-9-40 Freighter,DC94
+231,231,D9L,Dassault Falcon 900LX,F900
+232,232,D9X,Boeing (Douglas) DC-9-10 Freighter,DC91
+233,233,DC3,Boeing (Douglas) DC-3 Passenger,DC3
+234,234,DC4,Boeing (Douglas) DC-4,DC4
+235,235,DC6,Boeing (Douglas) DC-6B Passenger,DC6
+236,236,DF1,Dassault Falcon 10 / 100,FA10
+237,237,DF2,Dassault Falcon 20 / 200,FA20
+238,238,DF5,Dassault Falcon 50 / 50EX,FA50
+239,239,DF7,Dassault Falcon 7X,FA7X
+240,240,DF9,Dassault Falcon 900/900B/900C/900DX/900EX/EASY,F900
+241,241,DH1,De Havilland (Bombardier) DHC-8-100 Dash 8 / 8Q,DH8A
+242,242,DH2,De Havilland (Bombardier) DHC-8-200 Dash 8 / 8Q,DH8B
+243,243,DH3,De Havilland (Bombardier) DHC-8-300 Dash 8 / 8Q,DH8C
+244,244,DH4,De Havilland (Bombardier) DHC-8-400 Dash 8Q,DH8D
+245,245,DH7,De Havilland (Bombardier) DHC-7 Dash 7,DHC7
+246,246,DHC,De Havilland (Bombardier) DHC-4 Caribou,DHC4
+247,247,DHD,BAE Systems (De Havilland) 104 Dove,DOVE
+248,248,DHF,De Havilland (Bombardier) DHC-8 Freighter,0000
+249,249,DHH,BAE Systems (De Havilland) 114 Heron,HERN
+250,250,DHL,De Havilland (Bombardier) DHC-3 Turbo Otter,DH3T
+251,251,DHP,De Havilland (Bombardier) DHC-2 Beaver,DHC2
+252,252,DHR,De Havilland (Bombardier) DHC-2 Turbo Beaver,DH2T
+253,253,DHS,De Havilland (Bombardier) DHC-3 Otter,DHC3
+254,254,DHT,De Havilland (Bombardier) DHC-6 Twin Otter,DHC6
+255,255,E70,Embraer 170,E170
+256,256,E75,Embraer 175,E170
+257,257,E90,Embraer 190,E190
+258,258,E95,Embraer 195 and Legacy 1000,E190
+259,259,EA5,Eclipse 500,EA50
+260,260,EC3,Eurocopter EC130,EC30
+261,261,EC5,Eurocopter EC155,EC55
+262,262,EM2,Embraer 120 Brasilia,E120
+263,263,EMB,Embraer 110 Bandeirante,E110
+264,264,EP1,Embraer EMB-500 Phenom 100,E50P
+265,265,EP3,Embraer EMB-505 Phenom 300,E55P
+266,266,ER3,Embraer RJ135 and Legacy 600/650,E135
+267,267,ER4,Embraer RJ145,E145
+268,268,ERD,Embraer RJ140,E135
+269,269,F21,Fokker F28 Fellowship 1000,F28
+270,270,F22,Fokker F28 Fellowship 2000,F28
+271,271,F23,Fokker F28 Fellowship 3000,F28
+272,272,F24,Fokker F28 Fellowship 4000,F28
+273,273,F27,Fokker F27 Friendship / Fairchild Industries F-27,F27
+274,274,F50,Fokker 50,F50
+275,275,F5F,Fokker 50 Freighter,F50
+276,276,F70,Fokker 70,F70
+277,277,FK7,Fairchild Industries FH-227,F27
+278,278,FRJ,Fairchild Dornier 328JET,J328
+279,279,G2B,Gulfstream Aerospace G-1159 Gulfstream IIB,GLF2
+280,280,G2S,Gulfstream Aerospace G-1159 Gulfstream IISP,GLF2
+281,281,GA8,Gippsland Aeronautics GA8 Airvan,GA8
+282,282,GJ2,Gulfstream Aerospace G-1159 Gulfstream II,GLF2
+283,283,GJ3,Gulfstream Aerospace G-1159A Gulfstream III,GLF3
+284,284,GJ4,Gulfstream Aerospace IV (G300/G350/G400/G450/IVSP),GLF4
+285,285,GJ5,Gulfstream Aerospace V (G500/G550),GLF5
+286,286,GJ6,Gulfstream Aerospace G650,GLF6
+287,287,GR1,Gulfstream Aerospace G-100/G-150 (Astra SPX),G150
+288,288,GR2,Gulfstream Aerospace G-200 (Galaxy),GALX
+289,289,GR3,Gulfstream Aerospace G-280,G280
+290,290,GRG,Grumman G-21 Goose (Amphibian),G21
+291,291,GRM,Grumman G-73 Turbo Mallard (Amphibian),G73T
+292,292,H20,Hawker 200,PRM1
+293,293,H21,Hawker 1000,H25C
+294,294,H24,Hawker 4000,HA4T
+295,295,H25,Hawker 750/800/800XP/800SP,H25B
+296,296,H28,Hawker 850XP/900,H25B
+297,297,H29,Hawker 900XP,H25B
+298,298,HEC,Helio H-250 Courier / H-295 / 395 Super Courier,COUR
+299,299,HOV,Surface Equipment-Hovercraft,0000
+300,300,HS7,BAE Systems (Hawker Siddeley) 748 / Andover,A748
+301,301,I14,Ilyushin Il-114,I114
+302,302,I9F,Ilyushin Il-96 Freighter,IL96
+303,303,IL6,Ilyushin Il-62,IL62
+304,304,IL7,Ilyushin Il-76,IL76
+305,305,IL8,Ilyushin Il-18,IL18
+306,306,IL9,Ilyushin Il-96 Passenger,IL96
+307,307,ILW,Ilyushin Il-86,IL86
+308,308,J31,BAE Systems Jetstream 31,JS31
+309,309,J32,BAE Systems Jetstream 32,JS32
+310,310,J41,BAE Systems Jetstream 41,JS41
+311,311,JU5,Junkers Ju 52/3m,JU52
+312,312,L11,Lockheed Martin L-1011 TriStar 1 / 50 / 100 / 150 / 200 / 250 Passenger,L101
+313,313,L15,Lockheed Martin L-1011 TriStar 500 Passenger,L101
+314,314,L1F,Lockheed Martin L-1011 TriStar Freighter,L101
+315,315,L4F,Aircraft Industries (LET) 410 Freighter,L410
+316,316,L4T,Aircraft Industries (LET) 410,L410
+317,317,LCH,Surface Equipment-Launch / Boat,0000
+318,318,LJA,Light Jet Aircraft,ZZZZ
+319,319,LMO,Surface Equipment-Limousine,0000
+320,320,LOE,Lockheed Martin L-188 Electra,L188
+321,321,LOF,Lockheed Martin L-188 Electra Freighter,L188
+322,322,LOH,Lockheed Martin L-182 / L-282 / L-382 (L-100) Hercules,C130
+323,323,LRJ,Learjet,*
+324,324,M11,Boeing (Douglas) MD-11 Passenger,MD11
+325,325,M1F,Boeing (Douglas) MD-11 Freighter,MD11
+326,326,M1M,Boeing (Douglas) MD-11 Mixed Configuration,MD11
+327,327,M2F,Boeing (Douglas) MD82 Freighter,MD82
+328,328,M3F,Boeing (Douglas) MD83 Freighter,MD83
+329,329,M81,Boeing (Douglas) MD-81,MD81
+330,330,M82,Boeing (Douglas) MD-82,MD82
+331,331,M83,Boeing (Douglas) MD-83,MD83
+332,332,M87,Boeing (Douglas) MD-87,MD87
+333,333,M88,Boeing (Douglas) MD-88,MD88
+334,334,M8F,Boeing (Douglas) MD88 Freighter,MD88
+335,335,M90,Boeing (Douglas) MD-90,MD90
+336,336,MA6,Xian Yunshuji MA-60/MA600,AN24
+337,337,MBH,Eurocopter (MBB) BO105,B105
+338,338,MD9,MD Helicopters Inc MD 900 Explorer,EXPL
+339,339,MIH,Mil Mi-8 / Mi-17 / Mi-171 / Mi-172,MI8
+340,340,MU2,Mitsubishi Aircraft Corporation MU-2,MU2
+341,341,NDC,Aerospatiale SN601 Corvette,S601
+342,342,NDE,Eurocopter (Aerospatiale) AS350 Ecureuil / AS355 Ecureuil 2,*
+343,343,NDH,Eurocopter (Aerospatiale) SA365C / SA365N  Dauphin 2,*
+344,344,P18,Piaggio Aero P180 Avanti II,P180
+345,345,PA1,Piper (Light aircraft-single piston engine),*
+346,346,PA2,Piper (Light aircraft-twin piston engines),*
+347,347,PAT,Piper (Light aircraft-twin turboprop engines),*
+348,348,PL2,Pilatus PC-12,PC12
+349,349,PL6,Pilatus PC-6 Turbo Porter,PC6T
+350,350,PN6,Vulcanair (Partenavia) P.68,P68
+351,351,PR1,Hawker 390 Premier 1/1A,PRM1
+352,352,RFS,Surface Equipment-Road Feeder Service (Truck),0000
+353,353,S20,Saab 2000,SB20
+354,354,S58,Sikorsky S-58T,S58T
+355,355,S61,Sikorsky S-61,S61
+356,356,S76,Sikorsky S-76,S76
+357,357,SF3,Saab 340,SF34
+358,358,SFB,Saab 340B,SF34
+359,359,SFF,Saab 340 Freighter,SF34
+360,360,SH3,Shorts 330 (SD3-30),SH33
+361,361,SH6,Shorts 360 (SD3-60),SH36
+362,362,SHS,Shorts Skyvan (SC-7),SC7
+363,363,SU7,Sukhoi Superjet 100-75,ZZZZ
+364,364,SU9,Sukhoi Superjet 100-95,SU95
+365,365,SWF,Fairchild (Swearingen) SA226 Freighter,*
+366,366,SWM,Fairchild (Swearingen) SA26 / SA226 / SA227 Merlin / Metro / Expediter,*
+367,367,SY8,Shaanxi Y-8,AN12
+368,368,T20,Tupolev Tu-204 / Tu-214,T204
+369,369,T2F,Tupolev Tu-204 Freighter,T204
+370,370,T34,Tupolev Tu-334,T334
+371,371,TBM,SOCATA TBM-700,TBM7
+372,372,TRN,Train,0000
+373,373,TRS,Train,0000
+374,374,TU3,Tupolev Tu-134,T134
+375,375,TU5,Tupolev Tu-154,T154
+376,376,WWP,Israel Aerospace Industries 1124 Westwind,WW24
+377,377,YK2,Yakovlev Yak-42 / Yak-142,YK42
+378,378,YK4,Yakovlev Yak-40,YK40
+379,379,YN2,Harbin Yunshuji Y12,Y12
+380,380,YN7,Xian Yunshuji Y7,AN24
+381,381,YS1,NAMC YS-11,YS11
