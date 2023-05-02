@@ -1,4 +1,4 @@
-,Unnamed: 0,AircraftCode,Names,AirlineEquipCode
+Unnamed: 0.1,Unnamed: 0,AircraftCode,Names,AirlineEquipCode
 0,0,100,Fokker 100,F100
 1,1,141,BAE Systems 146-100 Passenger,B461
 2,2,142,BAE Systems 146-200 Passenger,B462
@@ -77,7 +77,6 @@
 75,75,743,Boeing 747-300 / 747-100/200 SUD Passenger,B743
 76,76,744,Boeing 747-400 Passenger,B744
 77,77,748,,
-79,79,74B,Boeing 747-400 Swingtail Freighter,B744
 80,80,74C,Boeing 747-200 Mixed Configuration,B742
 81,81,74D,Boeing 747-300 / 747-200 SUD Mixed Configuration,B743
 82,82,74E,Boeing 747-400 Mixed Configuration,B744
@@ -99,7 +98,6 @@
 98,98,75W,Boeing 757-200 (winglets) Passenger,B752
 99,99,762,Boeing 767-200 Passenger,B762
 101,101,763,Boeing 767-300 Passenger,B763
-102,102,764,Boeing 767-400 Passenger,B764
 103,103,76V,Boeing 767-300 (winglets) Freighter,B763
 104,104,76W,Boeing 767-300 (winglets) Passenger,B763
 105,105,76X,Boeing 767-200 Freighter,B762
