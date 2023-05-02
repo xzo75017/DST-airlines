@@ -1254,7 +1254,7 @@
 1252,VXE,VXE,CV,Airport,Sao Vicente,-01:00,Atlantic/Cape_Verde,16.8336,-25.0547
 1253,WAG,WAG,NZ,Airport,Wanganui,+12:00,Pacific/Auckland,-39.9625,175.0231
 1254,WAW,WAW,PL,Airport,Warsaw,+01:00,Europe/Warsaw,52.1658,20.9672
-1255,WDH,WDH,NA,Airport,Windhoek,+02:00,Africa/Windhoek,-22.48,17.4708
+1255,WDH,WDH,,Airport,Windhoek,+02:00,Africa/Windhoek,-22.48,17.4708
 1256,WEH,WEH,CN,Airport,Weihai,+08:00,Asia/Shanghai,37.1872,122.2289
 1257,WKJ,WKJ,JP,Airport,Wakkanai,+09:00,Asia/Tokyo,45.4042,141.8008
 1258,WLG,WLG,NZ,Airport,Wellington,+12:00,Pacific/Auckland,-41.3269,174.8069
@@ -1265,7 +1265,7 @@
 1263,WRO,WRO,PL,Airport,Wroclaw,+01:00,Europe/Warsaw,51.1028,16.8858
 1264,WUH,WUH,CN,Airport,Wuhan,+08:00,Asia/Shanghai,30.7839,114.2081
 1265,WUX,WUX,CN,Airport,Wuxi Sunan Shuofang,+08:00,Asia/Shanghai,31.4947,120.4294
-1266,WVB,WVB,NA,Airport,Walvis Bay,+02:00,Africa/Windhoek,-22.98,14.6453
+1266,WVB,WVB,,Airport,Walvis Bay,+02:00,Africa/Windhoek,-22.98,14.6453
 1267,WXN,WXN,CN,Airport,Wanzhou Wuqiao,+08:00,Asia/Shanghai,30.8039,108.4272
 1268,XAP,XAP,BR,Airport,Chapeco Serafin Enoss Bertaso,-03:00,America/Araguaina,-27.1342,-52.6567
 1269,XER,SXB,FR,Bus Station,Strasbourg Bus Station,+01:00,Europe/Paris,48.5853,7.7356
