@@ -245,7 +245,6 @@ CREATE OR REPLACE TABLE DimAirport("AirportCode" STRING primary key,"LocationTyp
 CREATE TABLE DimCity("CityCode" STRING primary key,"Names" STRING ,"UtcOffset" STRING ,"TimeZoneId" STRING);
 CREATE TABLE DimCountry("CountryCode" STRING primary key , "Names" STRING);
 CREATE TABLE DimDate("Date" DATE primary key );
-CREATE OR REPLACE dimDate2(date_key number identity(1,1) primary key,date date,year number,month number, day number,week number);
 CREATE TABLE DimTime("Time" TIME primary key );
 CREATE TABLE DimOperatingCarrier(OperatingCarrierID number identity(1,1) primary key, "AirlineID" STRING, "FlightNumber" STRING );;
 CREATE TABLE DimStatus("StatusID" number identity(1,1) primary key, "Code" STRING, "Description" text);
@@ -266,7 +265,7 @@ insert all into
 DimCountry ("CountryCode", "Names" )
 select * from Country;
 
-SELECT * FROM DimAirport;
+
 
 insert all into
 DimAirport ("AirportCode", "LocationType","Names","UtcOffset" ,"TimeZoneId","Latitude","Longitude")
