@@ -1,0 +1,299 @@
+CREATE or replace DATABASE Lufthansa_Airlines;
+use database Lufthansa_Airlines;
+
+CREATE or replace SCHEMA Lufthansa;
+USE SCHEMA Lufthansa;
+
+CREATE OR REPLACE STAGE s3_data url = 's3://dstairlines1/data_dstairlines/'
+credentials = (aws_key_id='AKIA6NCNMQFQS7YRXW5B',
+                aws_secret_key='w+rtmSUCXeZee+mL7LxJUZ6VkruUC8nxlhBl0B+P');
+list @s3_data;
+
+CREATE OR REPLACE TABLE customer_flight_Information (
+    FlightID string Primary key,
+    DpAirportCode STRING,
+    DpScheduledDate Date,
+    DpScheduledTime string,
+    DpActualDate Date,
+    DpActualTime string,
+    DpTerminalName STRING,
+    DpTerminalGate STRING,
+    DpStatusCode STRING,
+    DpStatusDescription string,
+    ArrAirportCode string,
+    ArrScheduledDate string,
+    ArrScheduledTime string,
+    ArrActualDate STRING,
+    ArrActualTime STRING,
+    ArrTerminalName STRING,
+    ArrTerminalGate STRING,
+    ArrStatusCode STRING,
+    ArrStatusDescription string,
+    AirlineID STRING,
+    FlightNumber STRING,
+    AircraftCode string,
+    Statuscode string,
+    StatutsDescription string
+);
+
+Create or replace table Countries (
+    Countrycode string Primary key,
+    Name string
+);
+
+Create or replace table Cities (
+    Citycode string Primary key,
+    Countrycode string foreign key references Countries (Countrycode),
+    Name string,
+    Utcoffset string,
+    TimezoneID string
+);
+
+Create or replace table Airports (
+    Airportcode string Primary key,
+    Citycode string foreign key references Cities(Citycode),
+    Countrycode string foreign key references Countries(Countrycode),
+    Location_Type string,
+    Name string,
+    Utcoffset string,
+    TimezoneID string,
+    Latitude Float,
+    Longitude Float
+);
+
+select * from AIRPORTS;
+
+Create or replace table Aircrafts (
+    Aircraftcode string primary key,
+    Name string,
+    AirlineEquipcode string
+);
+
+Create or replace table Airlines (
+    AirlineID string primary key,
+    Name string
+);
+
+Create or replace table Status (
+    Statuscode string primary key,
+    StatusDescription string
+);
+
+
+Create or replace table Flights (
+    FlightID string Primary Key,
+    DpAirportcode string foreign key references Airports(Airportcode),
+    ArrAirportcode string foreign key references Airports(Airportcode),
+    AirlineID string foreign key references Airlines(AirlineID),
+    Aircraftcode string foreign key references Aircrafts(Aircraftcode),
+    FlightNumber integer,
+    FlightStatus string
+);
+
+insert into Flights (FLIGHTID, DpAirportcode, ArrAirportcode, AirlineID, Aircraftcode, FlightNumber, FlightStatus) 
+select CF.FLIGHTID, CF.DpAirportcode, CF.ArrAirportcode, CF.AirlineID, CF.Aircraftcode, CF.FLIGHTNUMBER, CF.STATUTSDESCRIPTION
+From customer_flight_Information CF
+LEFT JOIN AIRPORTS as AP on AP.Airportcode = CF.DpAirportcode
+LEFT JOIN AIRPORTS as ARP on ARP.Airportcode = CF.ArrAirportcode
+LEFT JOIN AIRLINES AS AL on AL.AIRLINEID = CF.AirlineID
+LEFT Join AIRCRAFTS As AC on AC.AIRCRAFTCODE= CF.Aircraftcode;
+
+SELECT * from FLIGHTS;
+
+Create or replace table Arrivals (
+    ArrivalID number identity(1,1) primary key,
+    ArrAirportcode string foreign key references Airports(Airportcode),
+    FlightID string foreign key references Flights(FlightID),
+    ArrScheduledDate Date,
+    ArrScheduledTime string,
+    ArrActualDate Date,
+    ArrActualTime string,
+    ArrStatuscode string
+);
+
+insert into Arrivals (ARRAIRPORTCODE, FLIGHTID, ARRSCHEDULEDDATE, ARRSCHEDULEDTIME, ARRACTUALDATE, ARRACTUALTIME, ARRSTATUSCODE) 
+select ArrAirportcode, FlightID, ArrScheduledDate, ArrScheduledTime, ARRACTUALDATE, Arractualtime, ArrStatusCode
+From customer_flight_Information;
+
+select * from arrivals;
+
+Create or replace table Departures (
+    DepartureID number identity(1,1) primary key,
+    DpAirportcode string foreign key references Airports(Airportcode),
+    FlightID string foreign key references Flights(FlightID),
+    DpScheduledDate Date,
+    DpScheduledTime string,
+    DpActualDate Date,
+    DpActualTime string,
+    DpStatuscode string
+);
+
+insert into Departures (DpAirportcode, FlightID, DpScheduledDate, DpScheduledTime, DpActualDate, DpActualTime, DpStatuscode) 
+select DpAirportcode, FlightID, DpScheduledDate, DpScheduledTime, DpActualDate, DpActualTime, DpStatuscode
+From customer_flight_Information;
+
+select * from DEPARTURES;
+
+Create or replace table Terminal (
+    TerminalID string Primary key,
+    TerminalName string,
+    TerminalGate string
+);
+
+Use database lufthansa_airlines;
+Use schema lufthansa;
+
+
+create file format csv_coma_separated
+type = 'csv' compression = 'auto'
+field_delimiter = ';' record_delimiter ='\n'
+skip_header = 1 field_optionally_enclosed_by = 'NONE'
+trim_space = false error_on_column_count_mismatch = true
+escape = 'NONE' escape_unenclosed_field = '\134'
+date_format = 'auto' timestamp_format = 'auto' null_if = ('\\N');
+
+
+COPY INTO customer_flight_Information FROM @s3_data/
+pattern='.*customer_flight_information.*[.]csv'
+file_format = csv_coma_separated;
+
+COPY INTO Countries FROM @s3_data/countries.csv
+file_format = csv_coma_separated;
+
+COPY INTO Cities FROM @s3_data/cities.csv
+file_format = csv_coma_separated;
+
+COPY INTO Airports FROM @s3_data/airports.csv
+file_format = csv_coma_separated;
+
+COPY INTO Aircrafts FROM @s3_data/aircrafts.csv
+file_format = csv_coma_separated;
+
+COPY INTO AIRLINES FROM @s3_data/airlines.csv
+file_format = csv_coma_separated;
+
+COPY INTO STATUS FROM @s3_data/Status.csv
+file_format = csv_coma_separated;
+
+COPY INTO TERMINAL FROM @s3_data/Terminal.csv
+file_format = csv_coma_separated;
+
+
+
+Create schema STAR_SCHEMA;
+Use schema star_schema;
+
+Create or replace table Departure_Airports (
+    DpAirportCode string Primary key,
+    AirportName string,
+    Latitude float,
+    Longitude float,
+    CityName string,
+    UtcOffset string,
+    TimeZoneId string,
+    CountryName string
+);
+
+Insert Into Departure_Airports (DpAirportCode, AirportName, Latitude, Longitude, CityName, UtcOffset, TimeZoneId, CountryName)
+select AR.Airportcode, AR.Name,  AR.Latitude, AR.Longitude, CT.Name, AR.Utcoffset, AR.TimezoneID, CN.Name
+From LUFTHANSA.AIRPORTS AR 
+Join LUFTHANSA.CITIES CT on CT.Citycode = AR.Citycode
+Join LUFTHANSA.COUNTRIES CN on CN.Countrycode = AR.Countrycode;
+
+select * from Departure_Airports;
+
+
+Create or replace table Arrival_Airports (
+    ArrAirportCode string Primary key,
+    AirportName string,
+    Latitude string,
+    Longitude string,
+    CityName string,
+    CountryName string,
+    UtcOffset string,
+    TimeZoneId string
+);
+
+Insert Into Arrival_Airports (ArrAirportCode, AirportName, Latitude, Longitude, CityName, UtcOffset, TimeZoneId, CountryName)
+select AR.Airportcode, AR.Name,  AR.Latitude, AR.Longitude, CT.Name, AR.Utcoffset, AR.TimezoneID, CN.Name
+From LUFTHANSA.AIRPORTS AR 
+Join LUFTHANSA.CITIES CT on CT.Citycode = AR.Citycode
+Join LUFTHANSA.COUNTRIES CN on CN.Countrycode = AR.Countrycode;
+
+
+select * From Arrival_Airports;
+
+
+
+Create or replace table Departure_Status (
+    StatusCode string Primary Key,
+    StatusDescription string
+);
+
+Insert into Departure_Status (StatusCode, StatusDescription)
+select Statuscode, StatusDescription
+From LUFTHANSA.Status;
+
+Create or replace table Arrival_Status (
+    StatusCode string Primary key,
+    StatusDescription string
+);
+
+Insert into Arrival_Status (StatusCode, StatusDescription)
+select Statuscode, StatusDescription
+From LUFTHANSA.Status;
+
+Create or replace table Airlines (
+    AirlineID string Primary key,
+    AirlineName string
+);
+
+Insert into Airlines (AirlineID, AirlineName)
+select AirlineID, Name
+From LUFTHANSA.Airlines;
+
+Create or replace table Flight_Status (
+    StatusCode string Primary key,
+    StatusDescription string
+);
+
+Insert into Flight_Status (StatusCode, StatusDescription)
+select Statuscode, StatusDescription
+From LUFTHANSA.Status;
+
+Create or replace table Aircrafts (
+    AircraftCode string Primary key,
+    AicraftName string,
+    AirlineEquipcode string
+);
+
+Insert all into AIRCRAFTS select * from LUFTHANSA.AIRCRAFTS;
+
+
+create or replace table Flights (
+    FlightID string Primary key,
+    DepartureAirportCode string foreign key references Departure_Airports (DpAirportCode),
+    DepScheduledDate Date,
+    DepScheduledTime string,
+    DepartureActualDate Date,
+    DepartureActualTime string,
+    DepartureStatusCode string foreign key references Departure_Status (StatusCode),
+    FlightNumber string,
+    AirlineID string foreign key references Airlines (AirlineID),
+    AircfraftCode string foreign key references Aircrafts (AircraftCode),
+    ArrAirportCode string foreign key references Arrival_Airports (ArrAirportCode),
+    ArrScheduledDate Date,
+    ArrScheduledTime string,
+    ArrActualDate Date,
+    ArrActualTime string,
+    ArrStatusCode string foreign key references Arrival_Status (StatusCode),
+    FlightStatus string foreign key references Flight_Status (StatusCode)
+);
+
+Insert into Flights (FlightID, DepartureAirportCode, DepScheduledDate, DepScheduledTime, DepartureActualDate, DepartureActualTime, DepartureStatusCode, FlightNumber, AirlineID, AircfraftCode, ArrAirportCode, ArrScheduledDate, ArrScheduledTime, ArrActualDate, ArrActualTime, ArrStatusCode, FlightStatus)
+select F.FLIGHTID, DP.DPAIRPORTCODE , DP.DPSCHEDULEDDATE, DP.DPSCHEDULEDTIME, DP.DPACTUALDATE, DP.DPACTUALTIME, DP.DPSTATUSCODE, F.FLIGHTNUMBER, AL.AIRLINEID, F.AIRCRAFTCODE ,AR.ARRAIRPORTCODE, AR.ARRSCHEDULEDDATE, AR.ARRSCHEDULEDTIME, AR.ARRACTUALDATE, AR.ARRACTUALTIME, AR.ARRSTATUSCODE, F.FLIGHTSTATUS
+From LUFTHANSA.FLIGHTS F
+LEFT JOIN LUFTHANSA.DEPARTURES DP on DP.FLIGHTID = F.FLIGHTID
+LEFT JOIN LUFTHANSA.AIRLINES AL on AL.AIRLINEID = F.AIRLINEID
+LEFT JOIN LUFTHANSA.ARRIVALS AR on AR.FLIGHTID = F.FLIGHTID;
+
