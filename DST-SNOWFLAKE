@@ -5,8 +5,8 @@ CREATE or replace SCHEMA Lufthansa;
 USE SCHEMA Lufthansa;
 
 CREATE OR REPLACE STAGE s3_data url = 's3://dstairlines1/data_dstairlines/'
-credentials = (aws_key_id='AKIA6NCNMQFQS7YRXW5B',
-                aws_secret_key='w+rtmSUCXeZee+mL7LxJUZ6VkruUC8nxlhBl0B+P');
+credentials = (aws_key_id='',
+                aws_secret_key='');
 list @s3_data;
 
 CREATE OR REPLACE TABLE customer_flight_Information (
