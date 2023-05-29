@@ -5,8 +5,8 @@ CREATE SCHEMA Luft;
 
 //Creation d'un stage s3211_data
 CREATE STAGE s3212_data url = 's3://dst-airlines-lufthansa/data2_csv/'
-credentials = (aws_key_id='AKIA5HR3523CUD63XNV3',
-                aws_secret_key='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');
+credentials = (aws_key_id='**************',
+                aws_secret_key='*****************');
 
 
 // creation file format
