@@ -306,3 +306,125 @@ where d.dpairportcode = 'CDG';
 
 
 ---shema en etoile
+
+Create schema STAR_SCHEMA;
+Use schema star_schema;
+
+Create or replace table Departure_Airports (
+    DpAirportCode string Primary key,
+    AirportName string,
+    Latitude float,
+    Longitude float,
+    CityName string,
+    UtcOffset string,
+    TimeZoneId string,
+    CountryName string
+);
+
+Insert Into Departure_Airports (DpAirportCode, AirportName, Latitude, Longitude, CityName, UtcOffset, TimeZoneId, CountryName)
+select A.AIRPORTCODE, A.AIRPORTNAME, A.LATITUDE, A.LONGITUDE, C.CITYNAME, A.UTCOFFSET, A.TIMEZONEID, CN.COUNTRYNAME
+From public.airports A
+LEFT Join public.cities C on A.CITYCODE = C.CITYCODE
+LEFT Join public.countries CN on A.COUNTRYCODE = CN.COUNTRYCODE;
+
+select * from departure_Airports;
+
+select * from Departure_Airports;
+
+Create or replace table Arrival_Airports (
+    ArrAirportCode string Primary key,
+    AirportName string,
+    Latitude float,
+    Longitude float,
+    CityName string,
+    UtcOffset string,
+    TimeZoneId string,
+    CountryName string
+);
+
+
+Insert Into Arrival_Airports (ArrAirportCode, AirportName, Latitude, Longitude, CityName, UtcOffset, TimeZoneId, CountryName)
+select A.AIRPORTCODE, A.airportname, A.LATITUDE, A.LONGITUDE, C.CITYNAME, A.UTCOFFSET, A.TIMEZONEID, CN.COUNTRYNAME
+From public.airports A
+--left Join public.airports A on Ar.ARRAIRPORTCODE = A.AIRPORTCODE
+left Join public.cities C on A.CITYCODE = C.CITYCODE
+left Join public.countries CN on A.COUNTRYCODE = CN.COUNTRYCODE;
+
+
+select distinct * From Arrival_Airports;
+
+
+Create or replace table Departure_Status (
+    StatusCode string Primary Key,
+    StatusDescription string
+);
+
+Insert into Departure_Status (StatusCode, StatusDescription)
+select Statuscode, StatusDescription
+From public.status;
+
+Create or replace table Arrival_Status (
+    StatusCode string Primary key,
+    StatusDescription string
+);
+
+Insert into Arrival_Status (StatusCode, StatusDescription)
+select Statuscode, StatusDescription
+From public.status;
+
+Create or replace table Airlines (
+    AirlineId string Primary key,
+    AirlineName string
+);
+
+Insert into Airlines (AirlineId, AirlineName)
+select AirlineId, AirlineName
+From public.airlines;
+
+Create or replace table Flight_Status (
+    StatusCode string Primary key,
+    StatusDescription string
+);
+
+Insert into Flight_Status (StatusCode, StatusDescription)
+select Statuscode, StatusDescription
+From public.status;
+
+Create or replace table Aircrafts (
+    AircraftCode string Primary key,
+    AicraftName string,
+    AirlineEquipcode string
+);
+
+Insert all into AIRCRAFTS select * from public.aircrafts;
+
+
+create or replace table Flights (
+    FlightID string Primary key,
+    DpAirportCode string foreign key references Departure_Airports (DpAirportCode),
+    DpScheduledDate Date,
+    DpScheduledTime time,
+    DpActualDate Date,
+    DpActualTime time,
+    DpStatusCode string foreign key references Departure_Status (StatusCode),
+    AirlineId string foreign key references Airlines (AirlineId),
+    AircfraftCode string foreign key references Aircrafts (AircraftCode),
+    ArrAirportCode string foreign key references Arrival_Airports (ArrAirportCode),
+    ArrScheduledDate Date,
+    ArrScheduledTime time,
+    ArrActualDate Date,
+    ArrActualTime time,
+    ArrStatusCode string foreign key references Arrival_Status (StatusCode),
+    FlightStatus string foreign key references Flight_Status (StatusCode)
+);
+
+Insert into Flights (FLIGHTID, DpAirportCode, DpScheduledDate, DpScheduledTime, DpActualDate, DpActualTime, DpStatusCode, AirlineId, AircfraftCode, ArrAirportCode, ArrScheduledDate, ArrScheduledTime, ArrActualDate, ArrActualTime, ArrStatusCode, FlightStatus)
+select DISTINCT F.FLIGHTID, d.DPAIRPORTCODE , d.DPSCHEDULEDDATE, d.DPSCHEDULEDTIME, d.DPACTUALDATE, d.DPACTUALTIME, d.DPSTATUSCODE, AL.AIRLINEID, F.AIRCRAFTCODE , a.ARRAIRPORTCODE, a.ARRSCHEDULEDDATE, a.ARRSCHEDULEDTIME, a.ARRACTUALDATE, a.ARRACTUALTIME, a.ARRSTATUSCODE, s.STATUSCODE
+From public.flights F 
+INNER JOIN public.departures d on d.flightid =f.flightid
+INNER JOIN public.airlines AL on AL.airlineid = f.airlineid
+INNER JOIN public.arrivals a on a.flightid = f.flightid
+INNER JOIN public.status S on S.statuscode = f.flightstatus;
+ 
+select * from Flights; 
+
