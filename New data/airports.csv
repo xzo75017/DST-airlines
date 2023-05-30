@@ -1,0 +1,345 @@
+AirportCode;CityCode;CountryCode;LocationType;Names;UtcOffset;TimeZoneId;Latitude;Longitude;Continent
+AAL;AAL;DK;Airport;Aalborg;+01:00;Europe/Copenhagen;57.0928;9.8492;Europe
+AAQ;AAQ;RU;Airport;Anapa;+03:00;Europe/Moscow;45.0022;37.3472;Europe
+AAR;AAR;DK;Airport;Aarhus Tirstrup;+01:00;Europe/Copenhagen;56.3039;10.6194;Europe
+ABZ;ABZ;GB;Airport;Aberdeen (GB);+00:00;Europe/London;57.2042;-2.2003;Europe
+ADA;ADA;TR;Airport;Adana;+03:00;Europe/Istanbul;36.9822;35.2803;Europe
+ADB;IZM;TR;Airport;Izmir;+03:00;Europe/Istanbul;38.2925;27.1569;Europe
+ADF;ADF;TR;Airport;Adiyaman;+03:00;Europe/Istanbul;37.7314;38.4689;Europe
+AER;AER;RU;Airport;Sochi;+03:00;Europe/Moscow;43.45;39.9567;Europe
+AES;AES;NO;Airport;Aalesund;+01:00;Europe/Oslo;62.5603;6.1103;Europe
+AGH;AGH;SE;Airport;Angelholm/Helsingborg Angelholm Apt;+01:00;Europe/Stockholm;56.2961;12.8472;Europe
+AGP;AGP;ES;Airport;Malaga;+01:00;Europe/Madrid;36.675;-4.4992;Europe
+AJI;AJI;TR;Airport;Agri;+03:00;Europe/Istanbul;39.6539;43.0264;Europe
+AJR;AJR;SE;Airport;Arvidsjaur;+01:00;Europe/Stockholm;65.5903;19.2819;Europe
+ALC;ALC;ES;Airport;Alicante;+01:00;Europe/Madrid;38.2822;-0.5581;Europe
+ALF;ALF;NO;Airport;Alta;+01:00;Europe/Oslo;69.9761;23.3717;Europe
+AMS;AMS;NL;Airport;Amsterdam;+01:00;Europe/Amsterdam;52.3081;4.7642;Europe
+ANX;ANX;NO;Airport;Andenes Andoya;+01:00;Europe/Oslo;69.2925;16.1442;Europe
+AOE;AOE;TR;Airport;Eskisehir Anadolu;+03:00;Europe/Istanbul;39.81;30.5169;Europe
+AOI;AOI;IT;Airport;Ancona;+01:00;Europe/Rome;43.6167;13.3603;Europe
+AOK;AOK;GR;Airport;Karpathos;+02:00;Europe/Athens;35.4214;27.1461;Europe
+ARN;STO;SE;Airport;Stockholm;+01:00;Europe/Stockholm;59.6519;17.9186;Europe
+ASR;ASR;TR;Airport;Kayseri;+03:00;Europe/Istanbul;38.7703;35.4956;Europe
+ATH;ATH;GR;Airport;Athens;+02:00;Europe/Athens;37.9364;23.9444;Europe
+AXD;AXD;GR;Airport;Alexandroupolis;+02:00;Europe/Athens;40.8558;25.9564;Europe
+AYT;AYT;TR;Airport;Antalya;+03:00;Europe/Istanbul;36.8986;30.8006;Europe
+BAL;BAL;TR;Airport;Batman;+03:00;Europe/Istanbul;37.9289;41.1167;Europe
+BRE;BRE;DE;Airport;Bremen;+01:00;Europe/Berlin;53.0475;8.7867;Europe
+BRI;BRI;IT;Airport;Bari;+01:00;Europe/Rome;41.1381;16.765;Europe
+BRN;BRN;CH;Airport;Berne;+01:00;Europe/Zurich;46.9142;7.4972;Europe
+BRS;BRS;GB;Airport;Bristol;+00:00;Europe/London;51.3825;-2.7189;Europe
+BRU;BRU;BE;Airport;Brussels;+01:00;Europe/Brussels;50.9014;4.4844;Europe
+BSL;EAP;CH;Airport;Basel;+01:00;Europe/Zurich;47.6011;7.5217;Europe
+BUD;BUD;HU;Airport;Budapest;+01:00;Europe/Budapest;47.4369;19.2556;Europe
+BZG;BZG;PL;Airport;Bydgoszcz;+01:00;Europe/Warsaw;53.0967;17.9778;Europe
+CAG;CAG;IT;Airport;Cagliari;+01:00;Europe/Rome;39.2514;9.0578;Europe
+CDG;PAR;FR;Airport;Paris/ Ch.de Gaulle;+01:00;Europe/Paris;49.0097;2.5478;Europe
+CFU;CFU;GR;Airport;Corfu;+02:00;Europe/Athens;39.6019;19.9117;Europe
+CGN;CGN;DE;Airport;Cologne/Bonn;+01:00;Europe/Berlin;50.8658;7.1428;Europe
+CHQ;CHQ;GR;Airport;Chania;+02:00;Europe/Athens;35.5317;24.1497;Europe
+CIY;CIY;IT;Airport;Comiso Vincenzo Magliocco;+01:00;Europe/Rome;36.9947;14.6069;Europe
+CKZ;CKZ;TR;Airport;Canakkale;+03:00;Europe/Istanbul;40.1378;26.4267;Europe
+CLJ;CLJ;RO;Airport;Cluj;+02:00;Europe/Bucharest;46.7853;23.6861;Europe
+CLY;CLY;FR;Airport;Calvi;+01:00;Europe/Paris;42.5203;8.7931;Europe
+CPH;CPH;DK;Airport;Copenhagen;+01:00;Europe/Copenhagen;55.6203;12.6503;Europe
+CTA;CTA;IT;Airport;Catania;+01:00;Europe/Rome;37.4667;15.0639;Europe
+CUF;CUF;IT;Airport;Cuneo;+01:00;Europe/Rome;44.5475;7.6231;Europe
+DBV;DBV;HR;Airport;Dubrovnik;+01:00;Europe/Zagreb;42.5614;18.2683;Europe
+DEB;DEB;HU;Airport;Debrecen;+01:00;Europe/Budapest;47.4889;21.6153;Europe
+DHC;BRE;DE;Rail Station;Bremen Hbf;+01:00;Europe/Berlin;53.0836;8.8142;Europe
+DIY;DIY;TR;Airport;Diyarbakir;+03:00;Europe/Istanbul;37.8939;40.2011;Europe
+DLM;DLM;TR;Airport;Dalaman;+03:00;Europe/Istanbul;36.7131;28.7925;Europe
+DME;MOW;RU;Airport;Moscow Domodedowo;+03:00;Europe/Moscow;55.4089;37.9064;Europe
+DNK;DNK;UA;Airport;Dnepropetrovsk;+02:00;Europe/Zaporozhye;48.3572;35.1006;Europe
+DNZ;DNZ;TR;Airport;Denizli;+03:00;Europe/Istanbul;37.7856;29.7014;Europe
+DRS;DRS;DE;Airport;Dresden;+01:00;Europe/Berlin;51.1344;13.7681;Europe
+DTM;DTM;DE;Airport;Dortmund;+01:00;Europe/Berlin;51.5183;7.6122;Europe
+DTZ;DTM;DE;Rail Station;Dortmund Central Station;+01:00;Europe/Berlin;51.5178;7.4592;Europe
+DUB;DUB;IE;Airport;Dublin;+00:00;Europe/Dublin;53.4214;-6.27;Europe
+DUS;DUS;DE;Airport;Dusseldorf;+01:00;Europe/Berlin;51.2894;6.7667;Europe
+EDI;EDI;GB;Airport;Edinburgh;+00:00;Europe/London;55.95;-3.3725;Europe
+EDO;EDO;TR;Airport;Edremit Korfez;+03:00;Europe/Istanbul;39.5547;27.0139;Europe
+EFL;EFL;GR;Airport;Kefallinia;+02:00;Europe/Athens;38.12;20.5006;Europe
+EGO;EGO;RU;Airport;Belgorod;+03:00;Europe/Moscow;50.6439;36.59;Europe
+EMA;NQT;GB;Airport;East Midlands;+00:00;Europe/London;52.8311;-1.3281;Europe
+ERC;ERC;TR;Airport;Erzincan;+03:00;Europe/Istanbul;39.7103;39.5269;Europe
+ERF;ERF;DE;Airport;Erfurt;+01:00;Europe/Berlin;50.9797;10.9581;Europe
+ERZ;ERZ;TR;Airport;Erzurum;+03:00;Europe/Istanbul;39.9564;41.1703;Europe
+ESB;ANK;TR;Airport;Ankara;+03:00;Europe/Istanbul;40.1281;32.995;Europe
+EVE;EVE;NO;Airport;Harstad-Narvik;+01:00;Europe/Oslo;68.4914;16.6781;Europe
+EZS;EZS;TR;Airport;Elazig;+03:00;Europe/Istanbul;38.6069;39.2914;Europe
+FAO;FAO;PT;Airport;Faro;+00:00;Europe/Lisbon;37.0144;-7.9658;Europe
+FCO;ROM;IT;Airport;Rome;+01:00;Europe/Rome;41.8003;12.2389;Europe
+FDH;FDH;DE;Airport;Friedrichshafen;+01:00;Europe/Berlin;47.6714;9.5114;Europe
+FKB;FKB;DE;Airport;Karlsruhe/ Baden Baden;+01:00;Europe/Berlin;48.7794;8.0806;Europe
+FLR;FLR;IT;Airport;Florence;+01:00;Europe/Rome;43.8086;11.2028;Europe
+FMO;FMO;DE;Airport;Muenster-Osnabrueck;+01:00;Europe/Berlin;52.1347;7.6847;Europe
+FNC;FNC;PT;Airport;Funchal;+00:00;Europe/Lisbon;32.6942;-16.7781;Europe
+FRA;FRA;DE;Airport;Frankfurt;+01:00;Europe/Berlin;50.0331;8.5706;Europe
+FRL;FRL;IT;Airport;Forli;+01:00;Europe/Rome;44.1956;12.0697;Europe
+FRO;FRO;NO;Airport;Floro;+01:00;Europe/Oslo;61.5836;5.0247;Europe
+FSC;FSC;FR;Airport;Figari;+01:00;Europe/Paris;41.5022;9.0967;Europe
+GDN;GDN;PL;Airport;Gdansk;+01:00;Europe/Warsaw;54.3775;18.4661;Europe
+GGZ;GRZ;AT;Rail Station;Graz Rail Station;+01:00;Europe/Vienna;47.0731;15.4161;Europe
+GLA;GLA;GB;Airport;Glasgow;+00:00;Europe/London;55.8719;-4.4333;Europe
+GNY;SFQ;TR;Airport;Sanliurfa;+03:00;Europe/Istanbul;37.0944;38.8469;Europe
+GOA;GOA;IT;Airport;Genoa;+01:00;Europe/Rome;44.4133;8.8375;Europe
+GOJ;GOJ;RU;Airport;Nizhniy Novgorod;+03:00;Europe/Moscow;56.23;43.7842;Europe
+GOT;GOT;SE;Airport;Gothenburg;+01:00;Europe/Stockholm;57.6628;12.2797;Europe
+GPA;GPA;GR;Airport;Patrai;+02:00;Europe/Athens;38.1511;21.4256;Europe
+GRO;GRO;ES;Airport;Girona Costa Brava Apt;+01:00;Europe/Madrid;41.9008;2.7606;Europe
+GRQ;GRQ;NL;Airport;Groningen;+01:00;Europe/Amsterdam;53.125;6.5833;Europe
+GRZ;GRZ;AT;Airport;Graz;+01:00;Europe/Vienna;46.9936;15.44;Europe
+GVA;GVA;CH;Airport;Geneva;+01:00;Europe/Zurich;46.2381;6.1089;Europe
+GWT;GWT;DE;Airport;Westerland (Sylt);+01:00;Europe/Berlin;54.9133;8.3406;Europe
+GZP;GZP;TR;Airport;Gazipasa;+03:00;Europe/Istanbul;36.2981;32.2903;Europe
+GZT;GZT;TR;Airport;Gaziantep;+03:00;Europe/Istanbul;36.9472;37.4786;Europe
+HAJ;HAJ;DE;Airport;Hannover;+01:00;Europe/Berlin;52.4606;9.6894;Europe
+HAM;HAM;DE;Airport;Hamburg;+01:00;Europe/Berlin;53.6303;9.9883;Europe
+HAU;HAU;NO;Airport;Haugesund;+01:00;Europe/Oslo;59.3453;5.2083;Europe
+HDF;HDF;DE;Airport;Heringsdorf/ Usedom;+01:00;Europe/Berlin;53.8786;14.1522;Europe
+HEL;HEL;FI;Airport;Helsinki;+02:00;Europe/Helsinki;60.3172;24.9633;Europe
+HER;HER;GR;Airport;Heraklion;+02:00;Europe/Athens;35.3397;25.1803;Europe
+HOV;HOV;NO;Airport;Orsta-Volda;+01:00;Europe/Oslo;62.1792;6.0711;Europe
+HTY;HTY;TR;Airport;Hatay;+03:00;Europe/Istanbul;36.3597;36.2847;Europe
+IAS;IAS;RO;Airport;Iasi;+02:00;Europe/Bucharest;47.1786;27.6206;Europe
+IBZ;IBZ;ES;Airport;Ibiza;+01:00;Europe/Madrid;38.8728;1.3731;Europe
+IGD;IGD;TR;Airport;Igdir;+03:00;Europe/Istanbul;39.9728;43.8844;Europe
+INI;INI;RS;Airport;Nis;+01:00;Europe/Belgrade;43.3372;21.8536;Europe
+INN;INN;AT;Airport;Innsbruck;+01:00;Europe/Vienna;47.2603;11.3439;Europe
+IOA;IOA;GR;Airport;Ioannina;+02:00;Europe/Athens;39.6964;20.8225;Europe
+IOB;INN;AT;Rail Station;Innsbruck Railway Station;+01:00;Europe/Vienna;47.2628;11.4011;Europe
+ISE;ISE;TR;Airport;Isparta Suleyman Demirel;+03:00;Europe/Istanbul;37.8556;30.3683;Europe
+IST;IST;TR;Airport;Istanbul;+03:00;Europe/Istanbul;41.2706;28.7425;Europe
+IVL;IVL;FI;Airport;Ivalo;+02:00;Europe/Helsinki;68.6072;27.4053;Europe
+JER;JER;GB;Airport;Jersey;+00:00;Europe/London;49.2078;-2.1953;Europe
+JKG;JKG;SE;Airport;Jonkoping;+01:00;Europe/Stockholm;57.7575;14.0686;Europe
+JKH;JKH;GR;Airport;Chios;+02:00;Europe/Athens;38.3431;26.1406;Europe
+JMK;JMK;GR;Airport;Mykonos;+02:00;Europe/Athens;37.435;25.3481;Europe
+JNX;JNX;GR;Airport;Naxos;+02:00;Europe/Athens;37.0822;25.3686;Europe
+JSH;JSH;GR;Airport;Siteia;+02:00;Europe/Athens;35.2161;26.1014;Europe
+JSI;JSI;GR;Airport;Skiathos;+02:00;Europe/Athens;39.1772;23.5036;Europe
+JSY;JSY;GR;Airport;Syros Island;+02:00;Europe/Athens;37.4228;24.95;Europe
+JTR;JTR;GR;Airport;Thira;+02:00;Europe/Athens;36.3992;25.4794;Europe
+JTY;JTY;GR;Airport;Astypalaia Island;+02:00;Europe/Athens;36.58;26.3756;Europe
+KAO;KAO;FI;Airport;Kuusamo;+02:00;Europe/Helsinki;65.9875;29.2394;Europe
+KBP;IEV;UA;Airport;Kiev;+02:00;Europe/Zaporozhye;50.345;30.8947;Europe
+KCM;KCM;TR;Airport;Kahramanmaras;+03:00;Europe/Istanbul;37.5389;36.9533;Europe
+KCO;KCO;TR;Airport;Kocaeli;+03:00;Europe/Istanbul;40.7333;30.0833;Europe
+KFS;KFS;TR;Airport;Kastamonu;+03:00;Europe/Istanbul;41.315;33.7961;Europe
+KGS;KGS;GR;Airport;Kos;+02:00;Europe/Athens;36.7933;27.0917;Europe
+KHE;KHE;UA;Airport;Kherson;+02:00;Europe/Zaporozhye;46.6772;32.5072;Europe
+KIT;KIT;GR;Airport;Kithira;+02:00;Europe/Athens;36.2742;23.0169;Europe
+KIV;KIV;MD;Airport;Chisinau;+02:00;Europe/Chisinau;46.9278;28.9308;Europe
+KJR;FKB;DE;Rail Station;Karlsruhe Central Station;+01:00;Europe/Berlin;48.9936;8.4022;Europe
+KKN;KKN;NO;Airport;Kirkenes;+01:00;Europe/Oslo;69.7258;29.8914;Europe
+KLR;KLR;SE;Airport;Kalmar;+01:00;Europe/Stockholm;56.6856;16.2875;Europe
+KLU;KLU;AT;Airport;Klagenfurt;+01:00;Europe/Vienna;46.6428;14.3378;Europe
+KLX;KLX;GR;Airport;Kalamata;+02:00;Europe/Athens;37.0683;22.0256;Europe
+KRK;KRK;PL;Airport;Krakow;+01:00;Europe/Warsaw;50.0778;19.7847;Europe
+KRN;KRN;SE;Airport;Kiruna;+01:00;Europe/Stockholm;67.8219;20.3367;Europe
+KRR;KRR;RU;Airport;Krasnodar;+03:00;Europe/Moscow;45.0325;39.1664;Europe
+KRS;KRS;NO;Airport;Kristiansand;+01:00;Europe/Oslo;58.2042;8.0853;Europe
+KSC;KSC;SK;Airport;Kosice;+01:00;Europe/Bratislava;48.6631;21.2411;Europe
+KSU;KSU;NO;Airport;Kristiansund;+01:00;Europe/Oslo;63.1117;7.8244;Europe
+KSY;KSY;TR;Airport;Kars;+03:00;Europe/Istanbul;40.5622;43.115;Europe
+KTT;KTT;FI;Airport;Kittila;+02:00;Europe/Helsinki;67.7011;24.8469;Europe
+KTW;KTW;PL;Airport;Katowice;+01:00;Europe/Warsaw;50.4742;19.08;Europe
+KUF;KUF;RU;Airport;Samara;+04:00;Europe/Volgograd;53.5039;50.1517;Europe
+KUN;KUN;LT;Airport;Kaunas;+02:00;Europe/Vilnius;54.9639;24.0847;Europe
+KVA;KVA;GR;Airport;Kavala;+02:00;Europe/Athens;40.9133;24.6192;Europe
+KWQ;KSF;DE;Rail Station;Kassel Wilhelmshoehe Railway Station;+01:00;Europe/Berlin;51.3131;9.4467;Europe
+KYA;KYA;TR;Airport;Konya;+03:00;Europe/Istanbul;37.9789;32.5619;Europe
+KZN;KZN;RU;Airport;Kazan;+03:00;Europe/Moscow;55.6061;49.2786;Europe
+LCJ;LCJ;PL;Airport;Lodz;+01:00;Europe/Warsaw;51.7219;19.3981;Europe
+LCY;LON;GB;Airport;London City;+00:00;Europe/London;51.505;0.0542;Europe
+LDE;LDE;FR;Airport;Lourdes;+01:00;Europe/Paris;43.1856;-0.0028;Europe
+LED;LED;RU;Airport;St Petersburg;+03:00;Europe/Moscow;59.8003;30.2625;Europe
+LEJ;LEJ;DE;Airport;Leipzig/ Halle;+01:00;Europe/Berlin;51.4325;12.2417;Europe
+LGO;LGO;DE;Airport;Langeoog;+01:00;Europe/Berlin;53.75;7.4833;Europe
+LGW;LON;GB;Airport;London Gatwick;+00:00;Europe/London;51.1481;-0.1903;Europe
+LHR;LON;GB;Airport;London Heathrow;+00:00;Europe/London;51.4775;-0.4614;Europe
+LIN;MIL;IT;Airport;Milan Linate;+01:00;Europe/Rome;45.4494;9.2783;Europe
+LIS;LIS;PT;Airport;Lisbon;+00:00;Europe/Lisbon;38.7742;-9.1342;Europe
+LJU;LJU;SI;Airport;Ljubljana;+01:00;Europe/Ljubljana;46.2236;14.4575;Europe
+LKN;LKN;NO;Airport;Leknes;+01:00;Europe/Oslo;68.1544;13.6119;Europe
+LLA;LLA;SE;Airport;Lulea;+01:00;Europe/Stockholm;65.5439;22.1219;Europe
+LNZ;LNZ;AT;Airport;Linz;+01:00;Europe/Vienna;48.2333;14.1875;Europe
+LPL;LPL;GB;Airport;Liverpool John Lennon;+00:00;Europe/London;53.3336;-2.8497;Europe
+LRS;LRS;GR;Airport;Leros;+02:00;Europe/Athens;37.185;26.8003;Europe
+LUG;LUG;CH;Airport;Lugano;+01:00;Europe/Zurich;46.0042;8.9106;Europe
+LUX;LUX;LU;Airport;Luxembourg;+01:00;Europe/Luxembourg;49.6233;6.2044;Europe
+LUZ;LUZ;PL;Airport;Lublin;+01:00;Europe/Warsaw;51.2314;22.6906;Europe
+LWO;LWO;UA;Airport;Lviv;+02:00;Europe/Zaporozhye;49.8125;23.9561;Europe
+LYR;LYR;NO;Airport;Longyearbyen;+01:00;Europe/Oslo;78.2461;15.4656;Europe
+LYS;LYS;FR;Airport;Lyon;+01:00;Europe/Paris;45.7256;5.0811;Europe
+LZS;LNZ;AT;Rail Station;Linz Railway Station;+01:00;Europe/Vienna;48.2906;14.2911;Europe
+MAD;MAD;ES;Airport;Madrid;+01:00;Europe/Madrid;40.4936;-3.5667;Europe
+MAH;MAH;ES;Airport;Menorca;+01:00;Europe/Madrid;39.8625;4.2186;Europe
+MAN;MAN;GB;Airport;Manchester (UK);+00:00;Europe/London;53.3536;-2.275;Europe
+MHJ;MHG;DE;Rail Station;Mannheim Central Station;+01:00;Europe/Berlin;49.4794;8.4692;Europe
+MJF;MJF;NO;Airport;Mosjoen Kjaerstad;+01:00;Europe/Oslo;65.7839;13.215;Europe
+MJT;MJT;GR;Airport;Mytilene;+02:00;Europe/Athens;39.0533;26.6022;Europe
+MKF;MKF;DE;Rail Station;Muenster/Osnabrueck Muenster Hbf;+01:00;Europe/Berlin;51.9569;7.6353;Europe
+MLA;MLA;MT;Airport;Malta;+01:00;Europe/Malta;35.8575;14.4775;Europe
+MLO;MLO;GR;Airport;Milos;+02:00;Europe/Athens;36.6967;24.4728;Europe
+MLX;MLX;TR;Airport;Malatya Erhac;+03:00;Europe/Istanbul;38.4353;38.0911;Europe
+MMX;MMA;SE;Airport;Malmo Sturup;+01:00;Europe/Stockholm;55.5425;13.375;Europe
+MOL;MOL;NO;Airport;Molde;+01:00;Europe/Oslo;62.7447;7.2625;Europe
+MPL;MPL;FR;Airport;Montpellier;+01:00;Europe/Paris;43.5833;3.9614;Europe
+MQM;MQM;TR;Airport;Mardin;+03:00;Europe/Istanbul;37.2233;40.6317;Europe
+MQN;MQN;NO;Airport;Mo I Rana;+01:00;Europe/Oslo;66.3667;14.3;Europe
+MRS;MRS;FR;Airport;Marseille;+01:00;Europe/Paris;43.4367;5.215;Europe
+MSQ;MSQ;BY;Airport;Minsk 2;+03:00;Europe/Minsk;53.8825;28.0308;Europe
+MSR;MSR;TR;Airport;Mus;+03:00;Europe/Istanbul;38.7478;41.6611;Europe
+MUC;MUC;DE;Airport;Munich;+01:00;Europe/Berlin;48.3539;11.7861;Europe
+MXP;MIL;IT;Airport;Milan Malpensa;+01:00;Europe/Rome;45.63;8.7231;Europe
+MZH;MZH;TR;Airport;Amasya Merzifon;+03:00;Europe/Istanbul;40.8286;35.5203;Europe
+NAP;NAP;IT;Airport;Naples;+01:00;Europe/Rome;40.8844;14.2908;Europe
+NAV;NAV;TR;Airport;Nevsehir Kapadokya;+03:00;Europe/Istanbul;38.7719;34.5344;Europe
+NCE;NCE;FR;Airport;Nice;+01:00;Europe/Paris;43.6653;7.215;Europe
+NCL;NCL;GB;Airport;Newcastle;+00:00;Europe/London;55.0375;-1.6917;Europe
+NKT;NKT;TR;Airport;Sirnak;+03:00;Europe/Istanbul;37.3636;42.0619;Europe
+NOP;NOP;TR;Airport;Sinop;+03:00;Europe/Istanbul;42.0214;35.0775;Europe
+NQY;NQY;GB;Airport;Newquay;+00:00;Europe/London;50.4433;-5.0017;Europe
+NTE;NTE;FR;Airport;Nantes;+01:00;Europe/Paris;47.1569;-1.6078;Europe
+NUE;NUE;DE;Airport;Nuremberg;+01:00;Europe/Berlin;49.4986;11.0669;Europe
+ODS;ODS;UA;Airport;Odessa;+02:00;Europe/Zaporozhye;46.4267;30.6764;Europe
+OGZ;OGZ;RU;Airport;Vladikavkaz;+03:00;Europe/Moscow;43.205;44.6067;Europe
+OHD;OHD;MK;Airport;Ohrid;+01:00;Europe/Skopje;41.18;20.7422;Europe
+OLB;OLB;IT;Airport;Olbia;+01:00;Europe/Rome;40.8986;9.5178;Europe
+OPO;OPO;PT;Airport;Porto;+00:00;Europe/Lisbon;41.2356;-8.6781;Europe
+ORB;ORB;SE;Airport;Orebro;+01:00;Europe/Stockholm;59.2236;15.0381;Europe
+ORK;ORK;IE;Airport;Cork;+00:00;Europe/Dublin;51.8414;-8.4911;Europe
+ORY;PAR;FR;Airport;Paris Orly;+01:00;Europe/Paris;48.7233;2.3794;Europe
+OSD;OSD;SE;Airport;Ostersund;+01:00;Europe/Stockholm;63.1944;14.5003;Europe
+OSL;OSL;NO;Airport;Oslo;+01:00;Europe/Oslo;60.1939;11.1003;Europe
+OSY;OSY;NO;Airport;Namsos;+01:00;Europe/Oslo;64.4717;11.5706;Europe
+OTP;BUH;RO;Airport;Bucharest;+02:00;Europe/Bucharest;44.5722;26.1022;Europe
+OUL;OUL;FI;Airport;Oulu;+02:00;Europe/Helsinki;64.93;25.3544;Europe
+OVD;OVD;ES;Airport;Asturias;+01:00;Europe/Madrid;43.5636;-6.0347;Europe
+OZH;OZH;UA;Airport;Zaporozhye;+02:00;Europe/Zaporozhye;47.8669;35.3156;Europe
+PAD;PAD;DE;Airport;Paderborn/Lippstadt;+01:00;Europe/Berlin;51.6142;8.6164;Europe
+PAS;PAS;GR;Airport;Paros;+02:00;Europe/Athens;37.0103;25.1286;Europe
+PEG;PEG;IT;Airport;Perugia;+01:00;Europe/Rome;43.0972;12.5103;Europe
+PMI;PMI;ES;Airport;Palma De Mallorca;+01:00;Europe/Madrid;39.5517;2.7389;Europe
+PMO;PMO;IT;Airport;Palermo;+01:00;Europe/Rome;38.1819;13.0994;Europe
+PNA;PNA;ES;Airport;Pamplona;+01:00;Europe/Madrid;42.77;-1.6464;Europe
+POZ;POZ;PL;Airport;Poznan;+01:00;Europe/Warsaw;52.4211;16.8264;Europe
+PSA;PSA;IT;Airport;Pisa;+01:00;Europe/Rome;43.6828;10.3956;Europe
+PUY;PUY;HR;Airport;Pula;+01:00;Europe/Zagreb;44.8936;13.9222;Europe
+PVK;PVK;GR;Airport;Preveza/Lefkas;+02:00;Europe/Athens;38.9256;20.7653;Europe
+PXO;PXO;PT;Airport;Porto Santo;+00:00;Europe/Lisbon;33.0708;-16.3497;Europe
+QDL;LUG;CH;Rail Station;Lugano Railway Station;+01:00;Europe/Zurich;46.0053;8.9467;Europe
+QDU;DUS;DE;Rail Station;Dusseldorf Main Rail Station;+01:00;Europe/Berlin;51.2203;6.7931;Europe
+QFB;QFB;DE;Rail Station;Freiburg Rail Station;+01:00;Europe/Berlin;47.9978;7.8422;Europe
+QFZ;SCN;DE;Rail Station;Saarbruecken;+01:00;Europe/Berlin;49.2408;6.9908;Europe
+QKL;CGN;DE;Rail Station;Cologne central station;+01:00;Europe/Berlin;50.9433;6.9583;Europe
+QKU;CGN;DE;Rail Station;Cologne Deutz Rail Station;+01:00;Europe/Berlin;50.9406;6.9744;Europe
+QLJ;QLJ;CH;Rail Station;Lucerne Rail Station;+01:00;Europe/Zurich;47.0494;8.3106;Europe
+QLS;QLS;CH;Rail Station;Lausanne Rail Station;+01:00;Europe/Zurich;46.5172;6.6292;Europe
+QPP;BER;DE;Rail Station;Berlin Hbf Rail Station;+01:00;Europe/Berlin;52.525;13.3694;Europe
+QUL;QUL;DE;Rail Station;Ulm Rail Station;+01:00;Europe/Berlin;48.3997;9.9833;Europe
+QWU;QWU;DE;Rail Station;Wuerzburg Rail Station;+01:00;Europe/Berlin;49.7886;9.9364;Europe
+RHO;RHO;GR;Airport;Rhodes;+02:00;Europe/Athens;36.4056;28.0861;Europe
+RIX;RIX;LV;Airport;Riga;+02:00;Europe/Riga;56.9236;23.9711;Europe
+RJK;RJK;HR;Airport;Rijeka;+01:00;Europe/Zagreb;45.2169;14.5703;Europe
+RLG;RLG;DE;Airport;Rostock;+01:00;Europe/Berlin;53.9181;12.2783;Europe
+RMI;RMI;IT;Airport;Rimini;+01:00;Europe/Rome;44.0194;12.6094;Europe
+RNB;RNB;SE;Airport;Ronneby;+01:00;Europe/Stockholm;56.2667;15.265;Europe
+RNS;RNS;FR;Airport;Rennes St Jacques;+01:00;Europe/Paris;48.0719;-1.7322;Europe
+ROV;ROV;RU;Airport;Rostov;+03:00;Europe/Moscow;47.4936;39.9239;Europe
+RTM;RTM;NL;Airport;Rotterdam;+01:00;Europe/Amsterdam;51.9531;4.4308;Europe
+RVK;RVK;NO;Airport;Rorvik Ryum;+01:00;Europe/Oslo;64.8342;11.1356;Europe
+RZE;RZE;PL;Airport;Rzeszow;+01:00;Europe/Warsaw;50.11;22.0189;Europe
+SAW;IST;TR;Airport;Istanbul Sabiha Gokcen;+03:00;Europe/Istanbul;40.8986;29.3092;Europe
+SBZ;SBZ;RO;Airport;Sibiu;+02:00;Europe/Bucharest;45.7856;24.0914;Europe
+SCN;SCN;DE;Airport;Saarbrucken;+01:00;Europe/Berlin;49.2147;7.1106;Europe
+SCQ;SCQ;ES;Airport;Santiago De Compostela;+01:00;Europe/Madrid;42.8964;-8.4153;Europe
+SDL;SDL;SE;Airport;Sundsvall;+01:00;Europe/Stockholm;62.5281;17.4439;Europe
+SFT;SFT;SE;Airport;Skelleftea;+01:00;Europe/Stockholm;64.6247;21.0769;Europe
+SIR;SIR;CH;Airport;Sion;+01:00;Europe/Zurich;46.2225;7.34;Europe
+SJJ;SJJ;BA;Airport;Sarajevo;+01:00;Europe/Sarajevo;43.8247;18.3314;Europe
+SKG;SKG;GR;Airport;Thessaloniki;+02:00;Europe/Athens;40.5197;22.9708;Europe
+SKN;SKN;NO;Airport;Stokmarknes;+01:00;Europe/Oslo;68.5811;15.0211;Europe
+SKP;SKP;MK;Airport;Skopje;+01:00;Europe/Skopje;41.9617;21.6214;Europe
+SKU;SKU;GR;Airport;Skiros;+02:00;Europe/Athens;38.9683;24.4881;Europe
+SMI;SMI;GR;Airport;Samos;+02:00;Europe/Athens;37.69;26.9117;Europe
+SNN;SNN;IE;Airport;Shannon;+00:00;Europe/Dublin;52.7019;-8.9247;Europe
+SOB;SOB;HU;Airport;Balaton;+01:00;Europe/Budapest;46.6864;17.1592;Europe
+SOF;SOF;BG;Airport;Sofia;+02:00;Europe/Sofia;42.6953;23.4061;Europe
+SOU;SOU;GB;Airport;Southampton;+00:00;Europe/London;50.9503;-1.3567;Europe
+SPU;SPU;HR;Airport;Split;+01:00;Europe/Zagreb;43.5389;16.2981;Europe
+SSJ;SSJ;NO;Airport;Sandnessjoen Stokka;+01:00;Europe/Oslo;65.9569;12.4689;Europe
+STN;LON;GB;Airport;London Stansted;+00:00;Europe/London;51.885;0.235;Europe
+STR;STR;DE;Airport;Stuttgart;+01:00;Europe/Berlin;48.69;9.2219;Europe
+STW;STW;RU;Airport;Stavropol Shpakovskoye;+03:00;Europe/Moscow;45.1092;42.1128;Europe
+SUF;SUF;IT;Airport;Lamezia Terme;+01:00;Europe/Rome;38.9083;16.2417;Europe
+SVG;SVG;NO;Airport;Stavanger;+01:00;Europe/Oslo;58.8767;5.6378;Europe
+SVJ;SVJ;NO;Airport;Svolvaer;+01:00;Europe/Oslo;68.2439;14.6694;Europe
+SVO;MOW;RU;Airport;Moscow/Sheremetyevo;+03:00;Europe/Moscow;55.9728;37.4147;Europe
+SVQ;SVQ;ES;Airport;Sevilla;+01:00;Europe/Madrid;37.4181;-5.8931;Europe
+SXB;SXB;FR;Airport;Strasbourg;+01:00;Europe/Paris;48.5419;7.6344;Europe
+SZF;SZF;TR;Airport;Samsun Carsamba;+03:00;Europe/Istanbul;41.2544;36.5672;Europe
+SZG;SZG;AT;Airport;Salzburg;+01:00;Europe/Vienna;47.7933;13.0044;Europe
+SZY;SZY;PL;Airport;Szymany;+01:00;Europe/Warsaw;53.4806;20.9372;Europe
+SZZ;SZZ;PL;Airport;Szczecin;+01:00;Europe/Warsaw;53.5847;14.9022;Europe
+TEQ;TEQ;TR;Airport;Tekirdag;+03:00;Europe/Istanbul;41.1389;27.9194;Europe
+TGD;TGD;ME;Airport;Podgorica;+01:00;Europe/Podgorica;42.3594;19.2519;Europe
+TIA;TIA;AL;Airport;Tirana;+01:00;Europe/Tirane;41.415;19.7208;Europe
+TIV;TIV;ME;Airport;Tivat;+01:00;Europe/Podgorica;42.4047;18.7233;Europe
+TKU;TKU;FI;Airport;Turku;+02:00;Europe/Helsinki;60.5142;22.2628;Europe
+TLL;TLL;EE;Airport;Tallinn;+02:00;Europe/Tallinn;59.4133;24.8325;Europe
+TLS;TLS;FR;Airport;Toulouse;+01:00;Europe/Paris;43.635;1.3678;Europe
+TMP;TMP;FI;Airport;Tampere;+02:00;Europe/Helsinki;61.4142;23.6044;Europe
+TOS;TOS;NO;Airport;Tromso;+01:00;Europe/Oslo;69.6833;18.9189;Europe
+TRD;TRD;NO;Airport;Trondheim;+01:00;Europe/Oslo;63.4575;10.9242;Europe
+TRN;TRN;IT;Airport;Turin;+01:00;Europe/Rome;45.2025;7.6494;Europe
+TRS;TRS;IT;Airport;Trieste;+01:00;Europe/Rome;45.8275;13.4722;Europe
+TSR;TSR;RO;Airport;Timisoara;+02:00;Europe/Bucharest;45.81;21.3378;Europe
+TZX;TZX;TR;Airport;Trabzon;+03:00;Europe/Istanbul;40.995;39.7897;Europe
+UME;UME;SE;Airport;Umea;+01:00;Europe/Stockholm;63.7919;20.2828;Europe
+VAA;VAA;FI;Airport;Vaasa;+02:00;Europe/Helsinki;63.0506;21.7622;Europe
+VAN;VAN;TR;Airport;Van Ferit Melen;+03:00;Europe/Istanbul;38.4683;43.3322;Europe
+VAR;VAR;BG;Airport;Varna;+02:00;Europe/Sofia;43.2319;27.825;Europe
+VAS;VAS;TR;Airport;Sivas;+03:00;Europe/Istanbul;39.8139;36.9036;Europe
+VCE;VCE;IT;Airport;Venice;+01:00;Europe/Rome;45.5053;12.3519;Europe
+VGO;VGO;ES;Airport;Vigo;+01:00;Europe/Madrid;42.2317;-8.6267;Europe
+VIE;VIE;AT;Airport;Vienna;+01:00;Europe/Vienna;48.1103;16.5781;Europe
+VLC;VLC;ES;Airport;Valencia;+01:00;Europe/Madrid;39.4894;-0.4817;Europe
+VNO;VNO;LT;Airport;Vilnius;+02:00;Europe/Vilnius;54.6342;25.2858;Europe
+VOL;VOL;GR;Airport;Volos;+02:00;Europe/Athens;39.2197;22.7944;Europe
+VOZ;VOZ;RU;Airport;Voronezh;+03:00;Europe/Moscow;51.8142;39.2297;Europe
+VRN;VRN;IT;Airport;Verona;+01:00;Europe/Rome;45.3964;10.8881;Europe
+WAW;WAW;PL;Airport;Warsaw;+01:00;Europe/Warsaw;52.1658;20.9672;Europe
+WRO;WRO;PL;Airport;Wroclaw;+01:00;Europe/Warsaw;51.1028;16.8858;Europe
+XER;SXB;FR;Bus Station;Strasbourg Bus Station;+01:00;Europe/Paris;48.5853;7.7356;Europe
+XGZ;XGZ;AT;Rail Station;Bregenz Rail Station;+01:00;Europe/Vienna;47.5064;9.7486;Europe
+XHJ;AAH;DE;Rail Station;Aachen Rail Station;+01:00;Europe/Berlin;50.7683;6.0911;Europe
+XHQ;XHQ;TR;Bus Station;Artvin Hopa Bus Station;+03:00;Europe/Istanbul;41.3906;41.4169;Europe
+XIR;DRS;DE;Rail Station;Dresden Rail Station Dresden Hbf Rail S;+01:00;Europe/Berlin;51.0658;13.7406;Europe
+XIT;LEJ;DE;Rail Station;Leipzig Hbf Rail Station;+01:00;Europe/Berlin;51.3458;12.3817;Europe
+XIU;ERF;DE;Rail Station;Erfurt Rail Station;+01:00;Europe/Berlin;50.9725;11.0381;Europe
+XRY;XRY;ES;Airport;Jerez;+01:00;Europe/Madrid;36.7447;-6.06;Europe
+ZAD;ZAD;HR;Airport;Zadar;+01:00;Europe/Zagreb;44.1083;15.3467;Europe
+ZAG;ZAG;HR;Airport;Zagreb;+01:00;Europe/Zagreb;45.7431;16.0689;Europe
+ZAQ;NUE;DE;Rail Station;Nuremberg Rail Station;+01:00;Europe/Berlin;49.445;11.0825;Europe
+ZBA;EAP;CH;Rail Station;Basel Bad Rail Station;+01:00;Europe/Zurich;47.5678;7.6083;Europe
+ZDH;EAP;CH;Rail Station;Basel/Mulhouse SBB;+01:00;Europe/Zurich;47.5478;7.5897;Europe
+ZDI;ZDI;CH;Rail Station;Bellinzona Rail Station;+01:00;Europe/Zurich;46.2;9.0167;Europe
+ZDJ;BRN;CH;Rail Station;Berne Rail Station;+01:00;Europe/Zurich;46.9194;7.5;Europe
+ZEU;ZEU;DE;Rail Station;Goettingen Rail Station;+01:00;Europe/Berlin;51.5367;9.9269;Europe
+ZHF;ZHF;CH;Rail Station;Fribourg Rail Station;+01:00;Europe/Zurich;46.8;7.15;Europe
+ZHT;GVA;CH;Rail Station;Geneva Rail Station;+01:00;Europe/Zurich;46.2;6.1667;Europe
+ZIN;ZIN;CH;Rail Station;Interlaken Ost Rail Station;+01:00;Europe/Zurich;46.6833;7.85;Europe
+ZMB;HAM;DE;Rail Station;Hamburg Hbf Rail Station;+01:00;Europe/Berlin;53.5531;10.0067;Europe
+ZMU;MUC;DE;Rail Station;Munich Hbf Rail Station;+01:00;Europe/Berlin;48.1411;11.5544;Europe
+ZNS;ZNS;DE;Bus Station;Kempten;+01:00;Europe/Berlin;47.7119;10.3181;Europe
+ZPE;ZPE;DE;Rail Station;Muenster/Osnabrueck Rail Station Osnabr;+01:00;Europe/Berlin;52.2728;8.0606;Europe
+ZRB;FRA;DE;Rail Station;Frankfurt Hbf Rail Station;+01:00;Europe/Berlin;50.1067;8.6631;Europe
+ZRH;ZRH;CH;Airport;Zurich;+01:00;Europe/Zurich;47.4647;8.5492;Europe
+ZSB;SZG;AT;Rail Station;Salzburg Railway Station;+01:00;Europe/Vienna;47.8131;13.0458;Europe
+ZTH;ZTH;GR;Airport;Zakinthos;+02:00;Europe/Athens;37.7508;20.8842;Europe
+ZVR;HAJ;DE;Rail Station;Hannover Hbf Rail Station;+01:00;Europe/Berlin;52.3772;9.7419;Europe
+ZWS;STR;DE;Rail Station;Stuttgart Rail Station;+01:00;Europe/Berlin;48.7836;9.1814;Europe
