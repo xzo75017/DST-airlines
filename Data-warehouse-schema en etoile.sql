@@ -419,12 +419,15 @@ create or replace table Flights (
 );
 
 Insert into Flights (FLIGHTID, DpAirportCode, DpScheduledDate, DpScheduledTime, DpActualDate, DpActualTime, DpStatusCode, AirlineId, AircfraftCode, ArrAirportCode, ArrScheduledDate, ArrScheduledTime, ArrActualDate, ArrActualTime, ArrStatusCode, FlightStatus)
-select DISTINCT F.FLIGHTID, d.DPAIRPORTCODE , d.DPSCHEDULEDDATE, d.DPSCHEDULEDTIME, d.DPACTUALDATE, d.DPACTUALTIME, d.DPSTATUSCODE, AL.AIRLINEID, F.AIRCRAFTCODE , a.ARRAIRPORTCODE, a.ARRSCHEDULEDDATE, a.ARRSCHEDULEDTIME, a.ARRACTUALDATE, a.ARRACTUALTIME, a.ARRSTATUSCODE, s.STATUSCODE
+select DISTINCT F.FLIGHTID, DPAIRPORTCODE , DPSCHEDULEDDATE, DPSCHEDULEDTIME, DPACTUALDATE, DPACTUALTIME, DPSTATUSCODE, AL.AIRLINEID, F.AIRCRAFTCODE , ARRAIRPORTCODE, ARRSCHEDULEDDATE, ARRSCHEDULEDTIME, ARRACTUALDATE, ARRACTUALTIME, ARRSTATUSCODE, STATUSCODE
 From public.flights F 
-INNER JOIN public.departures d on d.flightid =f.flightid
-INNER JOIN public.airlines AL on AL.airlineid = f.airlineid
-INNER JOIN public.arrivals a on a.flightid = f.flightid
-INNER JOIN public.status S on S.statuscode = f.flightstatus;
+NATURAL JOIN public.departures 
+LEFT JOIN public.airlines AL on AL.airlineid = f.airlineid
+NATURAL JOIN public.arrivals
+LEFT JOIN public.status S on S.statuscode = f.flightstatus;
+ 
+select count(FLIGHTID) from Flights; 
+
  
 select * from Flights; 
 
