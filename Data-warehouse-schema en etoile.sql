@@ -7,9 +7,9 @@ use schema private;
 
 
 ---stage
-CREATE STAGE s3_data url = 's3://dstairline/data'
-credentials = (aws_key_id='AKIAV5AVCMDX7HN6MYOT',
-                aws_secret_key='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');
+CREATE STAGE s3_data url = '****************'
+credentials = (aws_key_id='************',
+                aws_secret_key='***************');
 list @s3_data;
 
 ---use the quering warehouse
@@ -17,12 +17,12 @@ use warehouse query;
 alter warehouse query resume;
 
 ---creating table
-create table countries(
+create or replace table countries(
     CountryCode     string,
     CountryName     string
 );
 
-create table cities(
+create or replace table cities(
     CityCode         string,
     CountryCode      string,
     CityName         string,
@@ -30,7 +30,7 @@ create table cities(
     TimeZoneId       string
 );
 
-create table airports (
+create or replace table airports (
     AirportCode     string,
     CityCode        string,
     CountryCode     string,
@@ -39,23 +39,24 @@ create table airports (
     UtcOffset       string,
     TimeZoneId      string,
     Latitude        float,
-    Longitude       float
+    Longitude       float,
+    Continent       string
 );
 
-create table aircrafts (
+create or replace table aircrafts (
     AircraftCode     string,
     AircraftName     string,
     AirlineEquipCode string
 );
 
 
-create table airlines (
+create or replace table airlines (
     AirlineId        string,
     AirlineName      string
 );
 
 
-create table flight_information (
+create or replace table flight_information (
     FlightId              string,    
     DpAirportCode         string,
     DpScheduledDate       date,
@@ -83,9 +84,7 @@ create table flight_information (
     
 );
 
-
-
-drop file format classic_csv;
+select * from flight_information;
 ---create file format
 create file format csv_coma_separated
 type = 'csv' compression = 'auto'
@@ -95,10 +94,10 @@ trim_space = false error_on_column_count_mismatch = true
 escape = 'NONE' escape_unenclosed_field = '\134'
 date_format = 'auto' timestamp_format = 'auto' null_if = ('\\N');
 
+
 ---use the loading warehouse
 use warehouse load;
 alter warehouse load resume;
-
 
 ---inserting data
 copy into countries
@@ -130,18 +129,6 @@ from @s3_data/
 pattern='.*/customer_flight_information_departures.*\.csv$'
 file_format=csv_coma_separated;
 
-/*copy into flight_information_departures
-from @s3_data/flight_information_departures.csv
-file_format = csv_coma_separated;
-
-
-copy into flight_information_arrivals
-from @s3_data/flight_information_arrivals.csv
-file_format = csv_coma_separated; */
-
-
-
-
 ---cration de nouvelles table
 
 create schema public;
@@ -160,7 +147,7 @@ create table cities(
     TimeZoneId       string
 );
 
-create table airports (
+create or replace table airports (
     AirportCode     string    primary key,
     CityCode        string    foreign key references cities(CityCode),
     CountryCode     string    foreign key references countries(CountryCode),
@@ -169,7 +156,8 @@ create table airports (
     UtcOffset       string,
     TimeZoneId      string,
     Latitude        float,
-    Longitude       float
+    Longitude       float,
+    Continent       string
 );
 
 create table aircrafts (
@@ -187,15 +175,19 @@ create table airlines (
 
 
 
-create table flights (
+create or replace table flights (
     FlightId           string   primary key,    
     DpAirportCode      string   foreign key references airports(AirportCode),
     ArrAirportCode     string   foreign key references airports(AirportCode),
     AirlineID          string   foreign key references airlines(AirlineId),
     FlightNumber       int,
-    AircraftCode       string   foreign key references aircrafts(AircraftCode)
+    AircraftCode       string   foreign key references aircrafts(AircraftCode),
+    StatusCode         string
 );
 
+select count(*) from flights;
+
+/*drop table terminals;
 create table terminals (
     TerminalId         int identity(1,1) primary key,
     FlightId           string    foreign key references flights(FlightId),
@@ -204,7 +196,7 @@ create table terminals (
     ArrTerminalName    string,
     ArrTerminalGate    string
 );
-
+*/
 
 create table status (
     StatusCode        string   primary key,
@@ -212,7 +204,7 @@ create table status (
 );
 
 
-create table departures (
+create or replace table departures (
     DepartureId           int identity(1,1) primary key,
     FlightId              string  foreign key references flights(FlightId),
     DpAirportCode         string  foreign key references airports(AirportCode),
@@ -220,11 +212,13 @@ create table departures (
     DpScheduledTime       time,
     DpActualDate          date,
     DpActualTime          time,
+    DpTerminalName        string,
+    DpTerminalGate        string,
     DpStatusCode          string  foreign key references status(StatusCode)
 );
 
 
-create table arrivals (
+create or replace table arrivals (
     ArrivalId             int identity(1,1) primary key,
     FlightId              string   foreign key references flights(FlightId),
     ArrAirportCode        string   foreign key references airports(AirportCode),
@@ -232,11 +226,12 @@ create table arrivals (
     ArrScheduledTime      time,
     ArrActualDate         date,
     ArrActualTime         time,
+    ArrTerminalName       string,
+    ArrTerminalGate       string,
     ArrStatusCode         string   foreign key references status(StatusCode)
 );
 
-
-
+select count(*) from;
 ---peuplement des tables
 insert into countries
 select *
@@ -259,24 +254,21 @@ select *
 from private.airlines;
 
 
-insert into  flights (FlightId, DpAirportCode, ArrAirportCode, AirlineID, FlightNumber, AircraftCode)
-select       FlightId, DpAirportCode, ArrAirportCode, AirlineID, FlightNumber, AircraftCode
+insert into  flights (FlightId, DpAirportCode, ArrAirportCode, AirlineID, FlightNumber, AircraftCode, StatusCode)
+select       FlightId, DpAirportCode, ArrAirportCode, AirlineID, FlightNumber, AircraftCode, StatusCode
 from         private.flight_information;
 
+SELECT * FROM flights; 
 
-insert into departures (FlightId, DpAirportCode, DpScheduledDate, DpScheduledTime, DpActualDate, DpActualTime, DpStatusCode)
-select      FlightId, DpAirportCode, DpScheduledDate, DpScheduledTime, DpActualDate, DpActualTime, DpStatusCode
+insert into departures (FlightId, DpAirportCode, DpScheduledDate, DpScheduledTime, DpActualDate, DpActualTime, DpTerminalName, DpTerminalGate, DpStatusCode)
+select      FlightId, DpAirportCode, DpScheduledDate, DpScheduledTime, DpActualDate, DpActualTime, DpTerminalName, DpTerminalGate, DpStatusCode
 from        private.flight_information;
 
 
-insert into arrivals (FlightId, ArrAirportCode, ArrScheduledDate, ArrScheduledTime, ArrActualDate, ArrActualTime, ArrStatusCode)
-select      FlightId, ArrAirportCode, ArrScheduledDate, ArrScheduledTime, ArrActualDate, ArrActualTime, ArrStatusCode
+insert into arrivals (FlightId, ArrAirportCode, ArrScheduledDate, ArrScheduledTime, ArrActualDate, ArrActualTime, ArrTerminalName, ArrTerminalGate, ArrStatusCode)
+select      FlightId, ArrAirportCode, ArrScheduledDate, ArrScheduledTime, ArrActualDate, ArrActualTime, ArrTerminalName, ArrTerminalGate, ArrStatusCode
 from        private.flight_information;
 
-
-insert into terminals (FlightId, DpTerminalName, DpTerminalGate, ArrTerminalName, ArrTerminalGate)
-select      FlightId, DpTerminalName, DpTerminalGate, ArrTerminalName, ArrTerminalGate
-from        private.flight_information;
 
 
 insert into     status (StatusCode, StatusDescription)
@@ -289,23 +281,16 @@ union
 select distinct StatusCode, StatusDescription 
 from            private.flight_information;
 
-
-
-
 select citycode, count(airportcode)
 from airports
 group by citycode
 order by count(airportcode) desc;
 
-
-select distinct d.dpairportcode, t.dpterminalgate
-from departures as d
-join terminals as t on d.flightid = t.flightid
-where d.dpairportcode = 'CDG';
-
+select * from terminals;
 
 
 ---shema en etoile
+
 
 Create schema STAR_SCHEMA;
 Use schema star_schema;
@@ -359,18 +344,20 @@ Create or replace table Departure_Status (
     StatusDescription string
 );
 
-Insert into Departure_Status (StatusCode, StatusDescription)
-select Statuscode, StatusDescription
-From public.status;
+insert into     Departure_Status (StatusCode, StatusDescription)
+select distinct s.StatusCode, s.StatusDescription
+from            public.status s
+join            public.departures d on s.StatusCode = d.DpStatusCode;
 
 Create or replace table Arrival_Status (
     StatusCode string Primary key,
     StatusDescription string
 );
 
-Insert into Arrival_Status (StatusCode, StatusDescription)
-select Statuscode, StatusDescription
-From public.status;
+insert into     Arrival_Status (StatusCode, StatusDescription)
+select distinct s.StatusCode, s.StatusDescription
+from            public.status s
+join            public.arrivals arr on s.StatusCode = arr.ArrStatusCode;
 
 Create or replace table Airlines (
     AirlineId string Primary key,
@@ -386,9 +373,10 @@ Create or replace table Flight_Status (
     StatusDescription string
 );
 
-Insert into Flight_Status (StatusCode, StatusDescription)
-select Statuscode, StatusDescription
-From public.status;
+insert into     Flight_Status (StatusCode, StatusDescription)
+select distinct s.StatusCode, s.StatusDescription
+from            public.status s
+join            public.flights f on s.StatusCode = f.StatusCode;
 
 Create or replace table Aircrafts (
     AircraftCode string Primary key,
@@ -419,15 +407,11 @@ create or replace table Flights (
 );
 
 Insert into Flights (FLIGHTID, DpAirportCode, DpScheduledDate, DpScheduledTime, DpActualDate, DpActualTime, DpStatusCode, AirlineId, AircfraftCode, ArrAirportCode, ArrScheduledDate, ArrScheduledTime, ArrActualDate, ArrActualTime, ArrStatusCode, FlightStatus)
-select DISTINCT F.FLIGHTID, DPAIRPORTCODE , DPSCHEDULEDDATE, DPSCHEDULEDTIME, DPACTUALDATE, DPACTUALTIME, DPSTATUSCODE, AL.AIRLINEID, F.AIRCRAFTCODE , ARRAIRPORTCODE, ARRSCHEDULEDDATE, ARRSCHEDULEDTIME, ARRACTUALDATE, ARRACTUALTIME, ARRSTATUSCODE, STATUSCODE
+select DISTINCT F.FLIGHTID, DPAIRPORTCODE , DPSCHEDULEDDATE, DPSCHEDULEDTIME, DPACTUALDATE, DPACTUALTIME, DPSTATUSCODE, AL.AIRLINEID, F.AIRCRAFTCODE , ARRAIRPORTCODE, ARRSCHEDULEDDATE, ARRSCHEDULEDTIME, ARRACTUALDATE, ARRACTUALTIME, ARRSTATUSCODE, f.STATUSCODE
 From public.flights F 
 NATURAL JOIN public.departures 
 LEFT JOIN public.airlines AL on AL.airlineid = f.airlineid
 NATURAL JOIN public.arrivals
-LEFT JOIN public.status S on S.statuscode = f.flightstatus;
- 
-select count(FLIGHTID) from Flights; 
-
+LEFT JOIN public.status S on S.statuscode = f.StatusCode;
  
 select * from Flights; 
-
