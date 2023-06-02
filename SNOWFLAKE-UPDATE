@@ -9,8 +9,8 @@ use schema private;
 
 ---stage
 CREATE STAGE s3_data url = 's3://dstairlines1/data_dstairlines'
-credentials = (aws_key_id='AKIA6NCNMQFQ343K5GV4',
-                aws_secret_key='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');
+credentials = (aws_key_id='='*****************************');',
+                aws_secret_key='*****************************');
 list @s3_data;
 
 ---use the quering warehouse
