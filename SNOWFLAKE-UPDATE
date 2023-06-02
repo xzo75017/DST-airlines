@@ -277,7 +277,8 @@ from private.cities;
 
 insert into airports
 select *
-from private.airports;
+from private.airports
+where LocationType = 'Airport';;
 
 insert into aircrafts
 select *
