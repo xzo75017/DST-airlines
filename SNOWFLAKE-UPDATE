@@ -413,7 +413,7 @@ create OR replace table flights (
 insert into Departures (AirportCode, AirportName, Latitude, Longitude, CityName, UtcOffset, TimeZoneId, CountryName, TerminalName, TerminalGate)
 select      a.AirportCode, a.AirportName, a.Latitude, a.Longitude, c.CityName, a.UtcOffset, a.TimeZoneId, co.CountryName, d.DpTerminalName, d.DpTerminalGate
 from        public.departures d
-left join        public.airports a   on d.DpAirportCode = a.AirportCode
+join        public.airports a   on d.DpAirportCode = a.AirportCode
 left join        public.cities c     on a.CityCode = c.CityCode
 left join        public.countries co on a.CountryCode = co.CountryCode;
 
