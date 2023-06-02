@@ -8,9 +8,9 @@ use schema private;
 
 
 ---stage
-CREATE STAGE s3_data url = 's3://dstairlines1/data_dstairlines'
-credentials = (aws_key_id='='*****************************');',
-                aws_secret_key='*****************************');
+CREATE OR REPLACE STAGE s3_data url = 's3://dstairlines1/data_dstairlines'
+credentials = (aws_key_id='AKIA6NCNMQFQ2AL4IF4S',
+                aws_secret_key='8ZGfT2NKnpQ5XNudXUL6bzChcFvx1UjljQVQptgU');
 list @s3_data;
 
 ---use the quering warehouse
@@ -277,9 +277,9 @@ from private.cities;
 
 insert into airports
 select *
-from private.airports
-where LocationType = 'Airport';;
+from private.airports;
 
+select * from airports;
 insert into aircrafts
 select *
 from private.aircrafts;
@@ -417,14 +417,16 @@ join        public.airports a   on d.DpAirportCode = a.AirportCode
 left join        public.cities c     on a.CityCode = c.CityCode
 left join        public.countries co on a.CountryCode = co.CountryCode;
 
+select count(*) from departures;
 
 insert into Arrivals (AirportCode, AirportName, Latitude, Longitude, CityName, UtcOffset, TimeZoneId, CountryName, TerminalName, TerminalGate)
 select      a.AirportCode, a.AirportName, a.Latitude, a.Longitude, c.CityName, a.UtcOffset, a.TimeZoneId, co.CountryName, arr.ArrTerminalName, arr.ArrTerminalGate
 from        public.arrivals arr
-left join        public.airports a   on arr.ArrAirportCode = a.AirportCode
+join        public.airports a   on arr.ArrAirportCode = a.AirportCode
 left join        public.cities c     on a.CityCode = c.CityCode
 left join        public.countries co on a.CountryCode = co.CountryCode;
 
+select * from Arrivals;
 
 insert into     departure_status (StatusCode, StatusDescription)
 select distinct s.StatusCode, s.StatusDescription
